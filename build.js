@@ -1,5 +1,4 @@
-
-var akasha = require('../akashacms');
+var akasha = require('akashacms');
 var util   = require('util');
 var async  = require('async');
 var oembed = require('oembed');
