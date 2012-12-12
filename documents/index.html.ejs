@@ -1,0 +1,28 @@
+---
+layout: default.html.ejs
+title: Akasha CMS example
+---
+
+<P>Welcome to <a href="http://akashacms.com">AkashaCMS</a>, the pseudo-CMS that produces static HTML files.</P>
+
+<p>The content area of content files contain HTML markup.</p>
+
+<p>The area above, the frontmatter, contains metadata.  The format of the frontmatter is a simple tag:value system.  The only tag with a predefined meaning is "layout" which specifies the template for rendering the content.  The content is available to the template in the variable named "content".</p>
+
+<p>The file name for content files specifies the template engine.  The current ones are:</p>
+
+<ul>
+<%
+// NOTE: This section also serves as a contrived example of processing data in a template
+var tags = {
+    ".html.ejs": "Uses the EJS template engine - https://github.com/visionmedia/ejs",
+    ".html.md": "Uses markdown - https://github.com/evilstreak/markdown-js/",
+    ".html.kernel": "Uses the Kernel template engine, to support asynchronous code in templates - https://github.com/c9/kernel",
+    ".css.less": "Uses the LESS renderer to produce a CSS file - http://lesscss.org"
+};
+for(var tag in tags) {
+    %><li><b><%= tag %></b>: <%= tags[tag] %></li><%
+}
+%></ul>
+
+<p>The EJS and Kernel template engines allow mixing of code with the markup, of course.</p>
