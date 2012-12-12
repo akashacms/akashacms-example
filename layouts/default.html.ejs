@@ -1,0 +1,35 @@
+---
+layout: page.html.ejs
+---
+
+
+<header>
+  <div class="row">
+    <div class="col_12">
+      <% if (typeof documenttitle !== "undefined") { %>
+      <h1 align="center"><%= documenttitle %></h1>
+      <% } else if (typeof title !== "undefined") { %>
+      <h1 align="center"><%= title %></h1>
+      <% } %>
+      <!-- <p align="center">header area</p> -->
+      <p><a href="/index.html">Home</a> <a href="/specs.html">Specifications</a></p>
+    </div>
+  </div>
+</header>
+
+<div class="container" role="main">
+<div class="row">
+<!--<section id="left" class="col_1 clearleft">
+</section> -->
+<!-- include our document's content -->
+<article class="col_10"><% if (typeof content !== "undefined") { %><%- content %><% } %></article>
+<!-- <section id="right" class="col_1 omega">
+right sidebar
+</section> -->
+</div>
+</div>
+
+
+<footer>
+<!-- footer -->
+</footer>
