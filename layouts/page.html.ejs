@@ -21,10 +21,18 @@
         <% if (typeof pagedescription !== "undefined") { %><meta name="description" content="<%= pagedescription %>" /><% } %>
         <% if (typeof pagekeywords    !== "undefined") { %><meta name="keywords"    content="<%= pagekeywords %>" /><% } %>
 
-	<!-- Output DocPad produced meta elements -->
-        <% if (typeof metaElements !== "undefined") metaElements.forEach(function(element) { %>
-            <meta name="<%= element.name %>" content="<%= element.content %>" />
-        <% }) %>
+	<!-- http://google.com/webmasters -- add googleSiteVerification to your frontmatter -->
+	<% if (typeof googleSiteVerification !== "undefined") { %>
+	<meta name="google-site-verification" content="<%- googleSiteVerification %>" />
+	<% } %>
+
+	<!-- http://microformats.org/wiki/rel-sitemap -->
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+	
+	<!-- http://en.wikipedia.org/wiki/Canonical_link_element -->
+	<% if (typeof rendered_url !== "undefined") { %>
+	<link rel="canonical" href="<%- rendered_url %>" />
+	<% } %>
 
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
 	<meta name="viewport" content="width=device-width" />
@@ -59,11 +67,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
     <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
 	
-	<!-- Output DocPad produced meta elements -->
-        <% if (typeof stylesheets !== "undefined") stylesheets.forEach(function(style) { %>
-            <link rel="stylesheet" type="text/css" media="<%= style.media %>" href="<%= style.href %>" />
-        <% }) %>
-
 	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 </head>
 <body>
