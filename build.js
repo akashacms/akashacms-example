@@ -1,8 +1,4 @@
 var akasha = require('akashacms');
-var util   = require('util');
-var async  = require('async');
-var oembed = require('oembed');
-var url    = require('url');
 
 akasha.process({
     root_layouts: 'layouts',               // Directory for layout files
