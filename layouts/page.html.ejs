@@ -18,6 +18,40 @@
 	<% } else if (typeof title !== "undefined") { %>
 		<title><%= title %></title>
 	<% } %>
+		
+<%
+    if (typeof metaOGtitle === "undefined") {
+	if (typeof pagetitle !== "undefined") {
+		metaOGtitle = pagetitle;
+	} else if (typeof title !== "undefined") {
+		metaOGtitle = title;
+	}
+    }
+    if (typeof metaOGdescription === "undefined") {
+	if (typeof metadescription !== "undefined") {
+		metaOGdescription = metadescription;
+	}
+    }
+    if (typeof metaDCtitle === "undefined") {
+	if (typeof pagetitle !== "undefined") {
+		metaDCtitle = pagetitle;
+	} else if (typeof title !== "undefined") {
+		metaDCtitle = title;
+	}
+    }
+    if (typeof metapagename === "undefined") {
+	if (typeof pagetitle !== "undefined") {
+		metapagename = pagetitle;
+	} else if (typeof title !== "undefined") {
+		metapagename = title;
+	}
+    }
+    if (typeof metadate === "undefined") {
+	metadate = rendered_date;
+    }
+
+%>
+
 	
 <!--
  - Basic HTML Meta Tags - Copied from https://gist.github.com/1997924
@@ -74,7 +108,7 @@
 	
 <% if (typeof metaOGtitle         !== "undefined") { %><meta name='og:title' content='<%= metaOGtitle %>'><% } %>
 <% if (typeof metaOGtype          !== "undefined") { %><meta name='og:type'  content='<%= metaOGtype %>'><% } %>
-<% if (typeof metaOGurl           !== "undefined") { %><meta name='og:url'   content='<%= metaOGurl %>'><% } %>
+<meta name='og:url'   content='<%= rendered_url %>'>
 <% if (typeof metaOGimage         !== "undefined") { %><meta name='og:image' content='<%= metaOGimage %>'><% } %>
 <% if (typeof metaOGsite_name     !== "undefined") { %><meta name='og:site_name' content='<%= metaOGsite_name %>'><% } %>
 <% if (typeof metaOGdescription   !== "undefined") { %><meta name='og:description' content='<%= metaOGdescription %>'><% } %>
@@ -94,7 +128,7 @@
 <% if (typeof metaOGcountryname   !== "undefined") { %><meta name='og:country-name' content='<%= metaOGcountryname %>'><% } %>
 
 <% if (typeof metaOGadmins        !== "undefined") { %><meta property='fb:admins' content='<%= metaOGadmins %>'><% } %>
-<% if (typeof metaOGtype          !== "undefined") { %><meta property='og:type' content='<%= metaOGtype %>'><% } %>
+<% if (typeof metaOGproptype      !== "undefined") { %><meta property='og:type' content='<%= metaOGproptype %>'><% } %>
 <% if (typeof metaOGpoints        !== "undefined") { %><meta property='og:points' content='<%= metaOGpoints %>'><% } %>
 
 <% if (typeof metaOGvideo         !== "undefined") { %><meta property='og:video' content='<%= metaOGvideo %>'><% } %>
