@@ -1,0 +1,12 @@
+{
+  "author": {
+    "name": "David Herron",
+    "email": "david@davidherron.com",
+    "url": "http://nodejs.davidherron.com"
+  },
+  "name": "akashacms-example",
+  "description": "AkashaCMS Example website",
+  "dependencies": {
+    "akashacms-theme-bootstrap": "*"
+  }
+}
