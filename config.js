@@ -8,7 +8,7 @@ module.exports = {
     root_docs: [ 'documents' ],     // Directory/ies of input files
     
     plugins: [
-        'akashacms-tagged-content',
+        // 'akashacms-tagged-content',
         'akashacms-theme-bootstrap'
     ],
     
