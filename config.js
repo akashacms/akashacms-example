@@ -28,6 +28,13 @@ module.exports = {
         dir:  'example.akashacms.com'
     },
     
+    mahabhuta: [
+      function($, metadata, done) {
+          $('hello-world').replaceWith('<p class="hello-world">Hello world! '+ metadata.title +'</p>');
+          done();
+      }
+    ],
+    
     data: {
         // Any objects put here are available in templates as data
         googleAnalyticsAccount: "UA-#########-##",
