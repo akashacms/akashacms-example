@@ -29,7 +29,7 @@ module.exports = {
     },
     
     mahabhuta: [
-      function($, metadata, done) {
+      function(config, $, metadata, done) {
           $('hello-world').replaceWith('<p class="hello-world">Hello world! '+ metadata.title +'</p>');
           done();
       }
