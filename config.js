@@ -37,22 +37,24 @@ module.exports = {
     
     data: {
         // Any objects put here are available in templates as data
-        googleAnalyticsAccount: "UA-#########-##",
-        googleAnalyticsDomain: "example.akashacms.com",
-        googleSiteVerification: ".....",
         metarobots: "index,follow",
         metaOGtype: "website",
         metaOGsite_name: "AkashaCMS example website",
         metasubject: "AkashaCMS",
         metalanguage: "EN",
-        headerScripts: {
-            stylesheets: [
-            ],
-            javaScriptTop: [
-            ],
-            javaScriptBottom: [
-            ]
-        }
+    },
+    
+    googleAnalyticsAccount: "UA-#########-##",
+    googleAnalyticsDomain: "example.akashacms.com",
+    googleSiteVerification: ".....",
+    
+    headerScripts: {
+        stylesheets: [
+        ],
+        javaScriptTop: [
+        ],
+        javaScriptBottom: [
+        ]
     },
     
     funcs: {
