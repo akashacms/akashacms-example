@@ -16,8 +16,8 @@ title: Akasha CMS example
 // NOTE: This section also serves as a contrived example of processing data in a template
 var tags = {
     ".html.ejs": "Uses the EJS template engine - https://github.com/visionmedia/ejs",
-    ".html.md": "Uses markdown - https://github.com/evilstreak/markdown-js/",
-    ".html.kernel": "Uses the Kernel template engine, to support asynchronous code in templates - https://github.com/c9/kernel",
+    ".html.md": "Uses markdown, processed by the Remarkable engine - https://www.npmjs.com/package/remarkable",
+    ".html.ejs.md": "Runs markdown followed by EJS",
     ".css.less": "Uses the LESS renderer to produce a CSS file - http://lesscss.org"
 };
 for(var tag in tags) {
@@ -25,4 +25,4 @@ for(var tag in tags) {
 }
 %></ul>
 
-<p>The EJS and Kernel template engines allow mixing of code with the markup, of course.</p>
+<p>The EJS template engine allows mixing of code with the markup, of course.</p>
