@@ -1,6 +1,7 @@
 
 <ul>
     <%
+    var items = JSON.parse(partialBody).items;
     for (item in items) {
         %><li><%= item %>: <%= items[item] %></li><%
     }

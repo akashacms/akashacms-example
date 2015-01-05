@@ -9,7 +9,8 @@ module.exports = {
     
     plugins: [
         // 'akashacms-tagged-content',
-        require('akashacms-theme-bootstrap')
+        require('akashacms-theme-bootstrap'),
+        require('akashacms-embeddables')
     ],
     
     root_url: "http://example.akashacms.com", // Root URL for the site this will generate
@@ -29,7 +30,7 @@ module.exports = {
     },
     
     mahabhuta: [
-      function(config, $, metadata, done) {
+      function($, metadata, dirty, done) {
           $('hello-world').replaceWith('<p class="hello-world">Hello world! '+ metadata.title +'</p>');
           done();
       }
@@ -56,6 +57,10 @@ module.exports = {
         javaScriptBottom: [
         ]
     },
+    
+    // embeddables: {
+    //     youtubeKey: '... retrieve your own key'
+    // },
     
     funcs: {
         // Any functions put here are available in templates as functions
