@@ -31,7 +31,7 @@ module.exports = {
     
     mahabhuta: [
       function($, metadata, dirty, done) {
-          $('hello-world').replaceWith('<p class="hello-world">Hello world! '+ metadata.title +'</p>');
+          $('helloworld').replaceWith('<p class="hello-world">Hello world! '+ metadata.title +'</p>');
           done();
       }
     ],

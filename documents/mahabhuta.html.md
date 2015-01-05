@@ -12,7 +12,7 @@ In `config.js` the author writes jQuery functions to manipulate content.  It use
 Here's an example: 
 
 ```
-<hello-world>This content will disappear.</hello-world>
+<helloworld>This content will disappear.</helloworld>
 ```
 
-Is replaced by:   <hello-world>This content will disappear.</hello-world>
+Is replaced by: <helloworld>This content will disappear.</helloworld>
