@@ -5,15 +5,15 @@ title: Example of partials in synchronous templates
 
 <p>AkashaCMS tries to handle both asynchronous and synchronous templating engines equally.  But it is impossible to treat both equally.  It's possible to start the rendering in a Kernel (asynchronous) template and then call synchronous (EJS or MD) templates, but not vice versa.</p>
 
-<%- partial('helloworld.html') %>
+<partial file-name='helloworld.html'></partial>
 
-<%- partial('listrender.html.ejs',
-            {
-                items: {
-                    "item 1": "item text 1",
-                    "item 2": "item text 2",
-                    "item 3": " item text 3 ",
-                    "item 4": "item text 4"
-                }
-            })
-%>
+<partial file-name='listrender.html.ejs'>
+{
+	"items": {
+		"item 1": "item text 1",
+		"item 2": "item text 2",
+		"item 3": " item text 3 ",
+		"item 4": "item text 4"
+	}
+}
+</partial>

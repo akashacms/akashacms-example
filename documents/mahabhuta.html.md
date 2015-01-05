@@ -7,7 +7,7 @@ The Mahabhuta template engine allows the website author to use jQuery-like funct
 
 The author inserts HTML tags in their content.  You can also invent wholly new tags if desired.
 
-In `config.js` the author writes jQuery functions to manipulate content.  It uses a subset of the jQuery API as provided by the cheerio module.
+In `config.js` the author writes jQuery functions to manipulate content.  It uses a subset of the jQuery API as provided by the cheerio module.  See [the Mahabhuta documentation](http://akashacms.com/documents/mahabhuta.html) for more information.
 
 Here's an example: 
 
