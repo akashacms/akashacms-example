@@ -2,20 +2,12 @@
 layout: boot_page.html
 ---
 
-
-<header>
-  <div class="row">
-    <div class="col_12">
-      <% if (typeof documenttitle !== "undefined") { %>
-      <h1 align="center"><%= documenttitle %></h1>
-      <% } else if (typeof title !== "undefined") { %>
-      <h1 align="center"><%= title %></h1>
-      <% } %>
-      <!-- <p align="center">header area</p> -->
-      <p><a href="http://akashacms.com/">AkashaCMS</a> | <a href="/index.html">Home</a> | <a href="/video.html">Video Example (asynchronous)</a> | <a href="/syncpartial.html">Synchronous code example</a> | <a href="/markdown.html">Markdown</a> | <a href="/mahabhuta.html">Mahabhuta</a></p>
-    </div>
-  </div>
-</header>
+<partial file-name="headernav.html.ejs" <%
+	if (typeof documenttitle !== "undefined") {
+		%> documenttitle="<%= documenttitle %>" <%
+	} else if (typeof title !== "undefined") {
+		%> title="<%= title %>" <%
+	} %>></partial>
 
 <div class="container" role="main">
 <div class="row">

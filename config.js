@@ -10,7 +10,8 @@ module.exports = {
     plugins: [
         // 'akashacms-tagged-content',
         require('akashacms-theme-bootstrap'),
-        require('akashacms-embeddables')
+        require('akashacms-embeddables'),
+        require('akashacms-booknav')
     ],
     
     root_url: "http://example.akashacms.com", // Root URL for the site this will generate

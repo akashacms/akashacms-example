@@ -1,0 +1,20 @@
+---
+layout: boot_page.html
+---
+
+<partial file-name="headernav.html.ejs" <%
+	if (typeof documenttitle !== "undefined") {
+		%> documenttitle="<%= documenttitle %>" <%
+	} else if (typeof title !== "undefined") {
+		%> title="<%= title %>" <%
+	} %>></partial>
+
+<div class="row">
+<article class="col-md-10 col-sm-10">
+  <breadcrumb-trail/>
+  <%- content %>
+  <%- bookChildTree(locals) %>
+</article>
+<section id="right" class="col-md-2 col-sm-2">
+</section>
+</div>
