@@ -7,13 +7,6 @@ module.exports = {
     root_out: 'out',                // Rendered output goes here
     root_docs: [ 'documents' ],     // Directory/ies of input files
     
-    plugins: [
-        // 'akashacms-tagged-content',
-        require('akashacms-theme-bootstrap'),
-        require('akashacms-embeddables'),
-        require('akashacms-booknav')
-    ],
-    
     root_url: "http://example.akashacms.com", // Root URL for the site this will generate
     
     doMinimize: false,
@@ -65,6 +58,14 @@ module.exports = {
     
     funcs: {
         // Any functions put here are available in templates as functions
+    },
+    
+    config: function(akasha) {
+        akasha.registerPlugins(module.exports, [
+            { name: 'akashacms-theme-bootstrap', plugin: require('akashacms-theme-bootstrap') },
+            { name: 'akashacms-embeddables', plugin: require('akashacms-embeddables') },
+            { name: 'akashacms-booknav', plugin: require('akashacms-booknav') }
+        ]);
     }
 
 };
