@@ -11,10 +11,10 @@ module.exports = {
     
     doMinimize: false,
     
-    tags: {
+    /* taggedContent: {
         pathIndexes: '/tags/',
         header: "---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p>Pages with tag @tagName@</p>"
-    },
+    }, */
     
     // Change this to suit your own server
     deploy_rsync: {
@@ -39,9 +39,11 @@ module.exports = {
         metalanguage: "EN",
     },
     
-    googleAnalyticsAccount: "UA-#########-##",
-    googleAnalyticsDomain: "example.akashacms.com",
-    googleSiteVerification: ".....",
+    google: {
+        analyticsAccount: "UA-#########-##",
+        analyticsDomain: "example.akashacms.com",
+        // siteVerification: "....."
+    },
     
     headerScripts: {
         stylesheets: [
