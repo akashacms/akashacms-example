@@ -9,6 +9,7 @@
   "dependencies": {
     "akashacms-theme-bootstrap": "*",
     "akashacms-embeddables": "*",
-    "akashacms-booknav": "*"
+    "akashacms-booknav": "*",
+    "akashacms-base": "*"
   }
 }

@@ -82,8 +82,8 @@ module.exports = {
         akasha.registerPlugins(module.exports, [
             { name: 'akashacms-theme-bootstrap', plugin: require('akashacms-theme-bootstrap') },
             { name: 'akashacms-embeddables', plugin: require('akashacms-embeddables') },
-            { name: 'akashacms-booknav', plugin: require('akashacms-booknav') }/* ,
-            { name: 'akashacms-base', plugin: require('../akashacms-base') } */
+            { name: 'akashacms-booknav', plugin: require('akashacms-booknav') },
+            { name: 'akashacms-base', plugin: require('akashacms-base') }
         ]);
         
         /*
