@@ -2,10 +2,14 @@
   "author": {
     "name": "David Herron",
     "email": "david@davidherron.com",
-    "url": "http://nodejs.davidherron.com"
+    "url": "http://davidherron.com"
   },
   "name": "akashacms-example",
   "description": "AkashaCMS Example website",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akashacms/akashacms-example.git"
+  },
   "dependencies": {
     "akashacms-theme-bootstrap": "*",
     "akashacms-embeddables": "*",
