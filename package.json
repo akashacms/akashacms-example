@@ -11,6 +11,7 @@
     "url": "git://github.com/akashacms/akashacms-example.git"
   },
   "dependencies": {
+    "akashacms": "*",
     "akashacms-theme-bootstrap": "*",
     "akashacms-embeddables": "*",
     "akashacms-booknav": "*",
