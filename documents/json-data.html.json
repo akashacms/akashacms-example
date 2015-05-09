@@ -1,0 +1,10 @@
+---
+layout: default.html.ejs
+title: JSON example
+JSONFormatter: json-format.html.ejs
+---
+{
+    "Row1": "value 1",
+    "Row2": "value 2",
+    "Row3": "value 3"
+}
