@@ -3,7 +3,7 @@ layout: default.html.ejs
 title: Markdown example
 ---
 
-AkashaCMS supports markdown using the [remarkable](https://www.npmjs.com/package/remarkable) engine for Node.js.  The stuff below is from the standard Markdown test suite.
+AkashaCMS supports markdown.  The stuff below is from the standard Markdown test suite.
 
 ``` js
 var a = 'hello';
