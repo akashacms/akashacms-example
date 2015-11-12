@@ -1,16 +1,17 @@
 ---
 layout: default.html.ejs
+title: Test of embedding video
 ---
 
-This demonstrates using asynchronous information retrieval in a template.  The problem with EJS or Markdown is that you cannot retrieve data in an asynchronous manner, and in a Node.js environment getting remotely stored data (say via a REST API) requires asynchronous operations.  
+This demonstrates using asynchronous information retrieval in a template.  The problem with EJS or Markdown is that you cannot retrieve data in an asynchronous manner, and in a Node.js environment getting remotely stored data (say via a REST API) requires asynchronous operations.
 
 Retrieving information about a video from Youtube or Vimeo, as well as its HTML player code, is an example of asynchronous operations.
 
 The following examples rely on the [akashacms-embeddables](https://www.npmjs.com/packages/akashacms-embeddables) plugin.  It supports a long list of embeddable stuff, many of which require asynchronous operations to fully render.
 
-The implementation of asynchronous information retrieval depends on [Mahabhuta](http://akashacms.com/documents/mahabhuta.html).  
+The implementation of asynchronous information retrieval depends on [Mahabhuta](http://akashacms.com/documents/mahabhuta.html).
 
-Mahabhuta is run after the EJS or Markdown is processed, and a Mahabhuta function can execute asynchronous operations.  
+Mahabhuta is run after the EJS or Markdown is processed, and a Mahabhuta function can execute asynchronous operations.
 
 The other thing demonstrated is the responsive youtube video code borrowed from <a href="http://www.jonsuh.com">http://www.jonsuh.com</a>.  This is implemented by the <tt>video.css</tt> file in the assets directory.  For a fun time, play with the size of the browser window while showing this page, or display this page on an iPhone and rotate the phone.
 
