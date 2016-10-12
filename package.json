@@ -12,9 +12,10 @@
   },
   "dependencies": {
     "akashacms": "*",
-    "akashacms-theme-bootstrap": "*",
-    "akashacms-embeddables": "*",
+    "akashacms-base": "*",
     "akashacms-booknav": "*",
-    "akashacms-base": "*"
+    "akashacms-cli": "^0.4.7",
+    "akashacms-embeddables": "*",
+    "akashacms-theme-bootstrap": "*"
   }
 }

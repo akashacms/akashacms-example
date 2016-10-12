@@ -7,7 +7,7 @@ To use this repository do the following
 
 ```
 $ cd into the repository
-$ npm install akasha
+$ npm install 
 $ mkdir out
-$ node build.js
+$ ./node_modules/.bin/akashacms build
 ```
