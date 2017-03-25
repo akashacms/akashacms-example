@@ -1,6 +1,7 @@
 ---
 layout: showjson.html.ejs
 title: Demonstrate JSON data
+JSONFormatter: json-inspect.html.ejs
 ---
 {
     "Tag": "Value",
