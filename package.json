@@ -10,11 +10,27 @@
     "type": "git",
     "url": "git://github.com/akashacms/akashacms-example.git"
   },
+  "scripts": {
+    "prebuild": "akasharender copy-assets config.js",
+    "build": "akasharender render config.js",
+    "deploy": "cd out && rsync --archive --delete --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
+    "preview": "cd out && ../node_modules/.bin/hostr"
+  },
   "dependencies": {
-    "akashacms": "*",
-    "akashacms-theme-bootstrap": "*",
-    "akashacms-embeddables": "*",
-    "akashacms-booknav": "*",
-    "akashacms-base": "*"
+    "akashacms-base": "akashacms/akashacms-base#akasharender",
+    "akashacms-booknav": "akashacms/akashacms-booknav#akasharender",
+    "akashacms-breadcrumbs": "akashacms/akashacms-breadcrumbs#akasharender",
+    "akashacms-embeddables": "akashacms/akashacms-embeddables#akasharender",
+    "akashacms-tagged-content": "akashacms/akashacms-tagged-content#akasharender",
+    "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap#akasharender",
+    "akasharender": ">=0.5.14",
+    "bootstrap": "^3.3.7",
+    "cheerio": "*",
+    "debug": "^2.2.0",
+    "epub-website": "akashacms/epub-website",
+    "hostr": "^2.x",
+    "jquery": "^3.1.1",
+    "mahabhuta": ">=0.6.3",
+    "oembetter": "^0.1.14"
   }
 }

@@ -13,8 +13,6 @@ The implementation of asynchronous information retrieval depends on [Mahabhuta](
 
 Mahabhuta is run after the EJS or Markdown is processed, and a Mahabhuta function can execute asynchronous operations.
 
-The other thing demonstrated is the responsive youtube video code borrowed from <a href="http://www.jonsuh.com">http://www.jonsuh.com</a>.  This is implemented by the <tt>video.css</tt> file in the assets directory.  For a fun time, play with the size of the browser window while showing this page, or display this page on an iPhone and rotate the phone.
-
 The Youtube examples are set up to not execute because retrieving data from youtube requires an access key.
 
 ```
@@ -56,8 +54,5 @@ This next set of examples are a video stored on Vimeo.  That service offers a si
 <vimeo-author url="http://vimeo.com/110572345"/>
 </a></p>
 <vimeo-description url="http://vimeo.com/110572345"></vimeo-description>
-<div class="embed-responsive js-video" style="clear: both;">
 <vimeo-player url="http://vimeo.com/110572345" />
 </div>
-</div>
-

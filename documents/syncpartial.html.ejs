@@ -1,11 +1,18 @@
 ---
 layout: default.html.ejs
-title: Example of partials in synchronous templates
+title: Example of partials in content documents
 ---
 
-<p>AkashaCMS tries to handle both asynchronous and synchronous templating engines equally.  But it is impossible to treat both equally.  It's possible to start the rendering in a Kernel (asynchronous) template and then call synchronous (EJS or MD) templates, but not vice versa.</p>
 
 <partial file-name='helloworld.html'></partial>
+
+<partial file-name="strong.html.ejs">
+    <i>Hello, world!</i>
+
+    And some other "quoted text"
+</partial>
+
+<p>This following doesn't work as expected.  The intention is to pass JSON to a partial, so the partial can use it as data.  However, the code recieves a string where the quotes are encoded as HTML entities, and then the <tt>JSON.parse</tt> function fails due to a syntax error.  Hence in <tt>listrender.html.ejs</tt> the intended code is now commented-out.</p>
 
 <partial file-name='listrender.html.ejs'>
 {
