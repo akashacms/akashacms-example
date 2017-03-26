@@ -46,13 +46,13 @@ This next set of examples are a video stored on Vimeo.  That service offers a si
 
 <div class="panel panel-default">
 <div class="panel-heading">
-<vimeo-thumbnail width="200" align="right" url="http://vimeo.com/110572345"></vimeo-thumbnail>
-<h3><vimeo-title url="http://vimeo.com/110572345"/></h3>
+<vimeo-thumbnail width="200" align="right" url="https://vimeo.com/110572345"></vimeo-thumbnail>
+<h3><vimeo-title url="https://vimeo.com/110572345"/></h3>
 </div>
 <p>Source: Vimeo, by
-<a href="http://vimeo.com/110572345" rel="nofollow">
-<vimeo-author url="http://vimeo.com/110572345"/>
+<a href="https://vimeo.com/110572345" rel="nofollow">
+<vimeo-author url="https://vimeo.com/110572345"/>
 </a></p>
-<vimeo-description url="http://vimeo.com/110572345"></vimeo-description>
-<vimeo-player url="http://vimeo.com/110572345" />
+<vimeo-description url="https://vimeo.com/110572345"></vimeo-description>
+<vimeo-player url="https://vimeo.com/110572345" />
 </div>
