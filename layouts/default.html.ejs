@@ -36,7 +36,10 @@
 <div class="container" role="main">
 <div class="row">
 <!-- include our document's content -->
-<article class="col-md-10"><%- content %></article>
+<article class="col-md-10">
+    <div id="breadcrumbs"><breadcrumb-trail></breadcrumb-trail></div>
+    <%- content %>
+</article>
 <section id="right" class="col-md-2">
 right sidebar
 </section>
