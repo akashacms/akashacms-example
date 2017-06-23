@@ -17,12 +17,12 @@
     "preview": "cd out && ../node_modules/.bin/hostr"
   },
   "dependencies": {
-    "akashacms-base": "akashacms/akashacms-base#akasharender",
-    "akashacms-booknav": "akashacms/akashacms-booknav#akasharender",
-    "akashacms-breadcrumbs": "akashacms/akashacms-breadcrumbs#akasharender",
+    "akashacms-base": "akashacms/akashacms-base",
+    "akashacms-booknav": "akashacms/akashacms-booknav",
+    "akashacms-breadcrumbs": "akashacms/akashacms-breadcrumbs",
     "akashacms-embeddables": "akashacms/akashacms-embeddables#akasharender",
-    "akashacms-tagged-content": "akashacms/akashacms-tagged-content#akasharender",
-    "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap#akasharender",
+    "akashacms-tagged-content": "akashacms/akashacms-tagged-content",
+    "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap",
     "akasharender": ">=0.5.14",
     "bootstrap": "^3.3.7",
     "cheerio": "*",

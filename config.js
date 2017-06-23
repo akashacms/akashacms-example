@@ -33,6 +33,7 @@ config
     .use(require('akashacms-base'))
     .use(require('akashacms-breadcrumbs'))
     .use(require('akashacms-booknav'))
+    .use(require('akashacms-document-viewers'))
     .use(require('akashacms-embeddables'))
     .use(require('akashacms-tagged-content'));
 
