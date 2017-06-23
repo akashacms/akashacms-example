@@ -3,9 +3,12 @@ layout: default.html.ejs
 title: Link to the PDF spec using Google Docs Viewer
 ---
 
-<googledocs-view-link href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf"/>
+<p>
+<googledocs-view-link href="https://stlab.adobe.com/wiki/images/d/d3/Test.pdf"/>
+</p>
 
-
-<googledocs-view-link href="http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf">
+<p>
+<googledocs-view-link href="https://stlab.adobe.com/wiki/images/d/d3/Test.pdf">
     Adobe PDF Specification
 </googledocs-view-link>
+</p>
