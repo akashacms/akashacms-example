@@ -10,12 +10,29 @@
     "type": "git",
     "url": "git://github.com/akashacms/akashacms-example.git"
   },
+  "scripts": {
+    "prebuild": "akasharender copy-assets config.js",
+    "build": "akasharender render config.js",
+    "deploy": "cd out && rsync --archive --delete --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
+    "preview": "cd out && ../node_modules/.bin/hostr"
+  },
   "dependencies": {
-    "akashacms": "*",
-    "akashacms-base": "*",
-    "akashacms-booknav": "*",
-    "akashacms-cli": "^0.4.7",
-    "akashacms-embeddables": "*",
-    "akashacms-theme-bootstrap": "*"
+    "akashacms-base": "akashacms/akashacms-base",
+    "akashacms-booknav": "akashacms/akashacms-booknav",
+    "akashacms-breadcrumbs": "akashacms/akashacms-breadcrumbs",
+    "akashacms-document-viewers": "akashacms/akashacms-document-viewers",
+    "akashacms-embeddables": "akashacms/akashacms-embeddables",
+    "akashacms-footnotes": "akashacms/akashacms-footnotes",
+    "akashacms-tagged-content": "akashacms/akashacms-tagged-content",
+    "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap",
+    "akasharender": ">=0.5.14",
+    "bootstrap": "^3.3.7",
+    "cheerio": "*",
+    "debug": "^2.2.0",
+    "epub-website": "akashacms/epub-website",
+    "hostr": "^2.x",
+    "jquery": "^3.1.1",
+    "mahabhuta": ">=0.6.3",
+    "oembetter": "^0.1.14"
   }
 }

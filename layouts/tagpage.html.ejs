@@ -22,8 +22,11 @@
 <ak-header-linkreltags></ak-header-linkreltags>
 <ak-stylesheets></ak-stylesheets>
 <ak-headerJavaScript></ak-headerJavaScript>
+<open-graph-promote-images root="article"></open-graph-promote-images>
 </head>
 <body>
+
+
 
 <partial file-name="headernav.html.ejs" <%
     if (typeof documenttitle !== "undefined") {
@@ -32,13 +35,13 @@
         %> title="<%= title %>" <%
     } %>></partial>
 
+<div class="container" role="main">
 <div class="row">
-<article class="col-md-10 col-sm-10">
-  <breadcrumb-trail/>
-  <%- content %>
-  <book-child-tree></book-child-tree>
+<!-- include our document's content -->
+<article class="col-md-10">
+    <%- content %>
 </article>
-<section id="right" class="col-md-2 col-sm-2">
+<section id="right" class="col-md-2">
     <p>right sidebar</p>
     <tag-cloud/>
 </section>
@@ -53,8 +56,8 @@
 </div>
 
 
+
 <!-- JavaScript at the bottom for fast page loading -->
 <ak-footerJavaScript></ak-footerJavaScript>
-<partial file-name="google-analytics.html"></partial>
 </body>
 </html>

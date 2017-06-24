@@ -25,6 +25,7 @@
 </head>
 <body>
 
+
 <partial file-name="headernav.html.ejs" <%
     if (typeof documenttitle !== "undefined") {
         %> documenttitle="<%= documenttitle %>" <%
@@ -32,15 +33,19 @@
         %> title="<%= title %>" <%
     } %>></partial>
 
+<div class="container" role="main">
 <div class="row">
-<article class="col-md-10 col-sm-10">
-  <breadcrumb-trail/>
-  <%- content %>
-  <book-child-tree></book-child-tree>
+<!-- include our document's content -->
+<article class="col-md-10">
+
+    <div id="breadcrumbs"><breadcrumb-trail></breadcrumb-trail></div>
+    <pre>
+        <%- content %>
+    </pre>
+
 </article>
-<section id="right" class="col-md-2 col-sm-2">
-    <p>right sidebar</p>
-    <tag-cloud/>
+<section id="right" class="col-md-2">
+right sidebar
 </section>
 </div>
 
