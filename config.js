@@ -1,10 +1,7 @@
 
 'use strict';
 
-const util    = require('util');
 const akasha  = require('akasharender');
-const async   = require('async');
-const cheerio = require('cheerio');
 const path    = require('path');
 
 const log    = require('debug')('akashacms-example:configuration');
@@ -35,6 +32,7 @@ config
     .use(require('akashacms-booknav'))
     .use(require('akashacms-document-viewers'))
     .use(require('akashacms-embeddables'))
+    .use(require('akashacms-footnotes'))
     .use(require('akashacms-tagged-content'));
 
 config.plugin("akashacms-base").generateSitemap(config, true);
