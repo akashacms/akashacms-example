@@ -1,6 +1,7 @@
 ---
 layout: default.html.ejs
 title: Test of embedding video
+tags: Embed, Video Embed
 ---
 
 This demonstrates using asynchronous information retrieval in a template.  The problem with EJS or Markdown is that you cannot retrieve data in an asynchronous manner, and in a Node.js environment getting remotely stored data (say via a REST API) requires asynchronous operations.
@@ -39,6 +40,13 @@ The Youtube examples are set up to not execute because retrieving data from yout
 </div>
 ```
 
+This next example uses `framed-embed` to load the above video
+
+<framed-embed href="https://www.youtube.com/watch?v=QweNsLesMrM"/>
+
+And this example uses `simple-embed`
+
+<simple-embed href="https://www.youtube.com/watch?v=QweNsLesMrM"/>
 
 This next set of examples are a video stored on Vimeo.  That service offers a simple REST based protocol (using oEmbed) meaning this can be a live example where we cannot with Youtube.
 

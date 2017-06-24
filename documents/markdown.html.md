@@ -1,6 +1,7 @@
 ---
 layout: default.html.ejs
 title: Markdown example
+tags: Markdown
 ---
 
 AkashaCMS supports markdown.  The stuff below is from the standard Markdown test suite.
