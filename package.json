@@ -21,7 +21,7 @@
     "akashacms-booknav": "akashacms/akashacms-booknav",
     "akashacms-breadcrumbs": "akashacms/akashacms-breadcrumbs",
     "akashacms-document-viewers": "akashacms/akashacms-document-viewers",
-    "akashacms-embeddables": "akashacms/akashacms-embeddables",
+    "akashacms-embeddables": "akashacms/akashacms-embeddables#overhaul",
     "akashacms-footnotes": "akashacms/akashacms-footnotes",
     "akashacms-tagged-content": "akashacms/akashacms-tagged-content",
     "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap",

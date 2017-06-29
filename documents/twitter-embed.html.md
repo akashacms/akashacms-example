@@ -5,13 +5,7 @@ tags: Twitter Embed, Embed
 ---
 
 ```
-<twitter-embed href="https://twitter.com/AkashaCMS/status/565602061681971200"></twitter-embed>
+<embed-resource href="https://twitter.com/AkashaCMS/status/565602061681971200"></embed-resource>
 ```
 
-<twitter-embed href="https://twitter.com/AkashaCMS/status/565602061681971200"></twitter-embed>
-
-```
-<simple-embed href="https://twitter.com/AkashaCMS/status/565602061681971200"></simple-embed>
-```
-
-<simple-embed href="https://twitter.com/AkashaCMS/status/565602061681971200"></simple-embed>
+<embed-resource href="https://twitter.com/AkashaCMS/status/565602061681971200"></embed-resource>
