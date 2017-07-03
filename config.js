@@ -32,10 +32,23 @@ config
     .use(require('akashacms-booknav'))
     .use(require('akashacms-document-viewers'))
     .use(require('akashacms-embeddables'))
+    .use(require('akashacms-external-links'))
     .use(require('akashacms-footnotes'))
     .use(require('akashacms-tagged-content'));
 
 config.plugin("akashacms-base").generateSitemap(config, true);
+
+config.plugin("akashacms-external-links")
+    .setTargetBlank(config, true)
+    // .setPreferNofollow(config, false)
+    .addBlacklistEntry(config, 'google.com')
+    .addBlacklistEntry(config, 'docs.google.com')
+    .addBlacklistEntry(config, 'cnn.com')
+    .addBlacklistEntry(config, 'bbc.co.uk')
+    .addWhitelistEntry(config, '7gen.com')
+    // .addWhitelistEntry(config, 'visforvoltage.org')
+    // .addWhitelistEntry(config, 'thereikipage.com');
+    ;
 
 config
     .addFooterJavaScript({ href: "/vendor/jquery/jquery.min.js" })
