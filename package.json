@@ -17,6 +17,7 @@
     "preview": "cd out && ../node_modules/.bin/hostr"
   },
   "dependencies": {
+    "akashacms-affiliates": "akashacms/akashacms-affiliates",
     "akashacms-base": "akashacms/akashacms-base",
     "akashacms-booknav": "akashacms/akashacms-booknav",
     "akashacms-breadcrumbs": "akashacms/akashacms-breadcrumbs",

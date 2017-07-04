@@ -34,9 +34,14 @@ config
     .use(require('akashacms-embeddables'))
     .use(require('akashacms-external-links'))
     .use(require('akashacms-footnotes'))
+    .use(require('akashacms-affiliates'))
     .use(require('akashacms-tagged-content'));
 
 config.plugin("akashacms-base").generateSitemap(config, true);
+
+config.plugin("akashacms-affiliates")
+    .amazonAffiliateCode(config, 'com', 'thereikipage')
+    .loadAffiliateProducts(config, 'affiliate-products.yml');
 
 config.plugin("akashacms-external-links")
     // TARGET=_blank test
