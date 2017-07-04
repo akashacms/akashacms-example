@@ -27,7 +27,7 @@
     "akashacms-footnotes": "akashacms/akashacms-footnotes",
     "akashacms-tagged-content": "akashacms/akashacms-tagged-content",
     "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap",
-    "akasharender": ">=0.5.14",
+    "akasharender": ">=0.6.1",
     "bootstrap": "^3.3.7",
     "cheerio": "*",
     "debug": "^2.2.0",
