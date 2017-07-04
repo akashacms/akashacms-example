@@ -53,7 +53,7 @@ config.plugin("akashacms-external-links")
     // .setShowFavicons(config, "never")
 
     // ICON test
-    // .setShowIcon(config, "after")
+    .setShowIcon(config, "after")
     // .setShowIcon(config, "before")
     // .setShowIcon(config, "never")
 
