@@ -39,11 +39,21 @@ config
 config.plugin("akashacms-base").generateSitemap(config, true);
 
 config.plugin("akashacms-external-links")
+    // TARGET=_blank test
     .setTargetBlank(config, true)
-    // .setPreferNofollow(config, false)
+
+    // FAVICON test
     // .setShowFavicons(config, "after")
-    // .setShowFavicons(config, "before")
-    .setShowFavicons(config, "never")
+    .setShowFavicons(config, "before")
+    // .setShowFavicons(config, "never")
+
+    // ICON test
+    // .setShowIcon(config, "after")
+    // .setShowIcon(config, "before")
+    // .setShowIcon(config, "never")
+
+    // NOFOLLOW test
+    // .setPreferNofollow(config, false)
     .addBlacklistEntry(config, 'google.com')
     .addBlacklistEntry(config, 'docs.google.com')
     .addBlacklistEntry(config, 'cnn.com')
