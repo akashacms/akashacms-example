@@ -41,7 +41,9 @@ config.plugin("akashacms-base").generateSitemap(config, true);
 
 config.plugin("akashacms-affiliates")
     .amazonAffiliateCode(config, 'com', 'thereikipage')
-    .loadAffiliateProducts(config, 'affiliate-products.yml');
+    .loadAffiliateProducts(config, 'affiliate-products.yml')
+    .noSkimlinksDomain(config, 'amazon.com')
+    .noViglinksDomain(config, 'amazon.com');
 
 config.plugin("akashacms-external-links")
     // TARGET=_blank test
@@ -58,7 +60,7 @@ config.plugin("akashacms-external-links")
     // .setShowIcon(config, "never")
 
     // NOFOLLOW test
-    // .setPreferNofollow(config, false)
+    .setPreferNofollow(config, false)
     .addBlacklistEntry(config, 'google.com')
     .addBlacklistEntry(config, 'docs.google.com')
     .addBlacklistEntry(config, 'cnn.com')
