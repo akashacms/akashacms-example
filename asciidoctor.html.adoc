@@ -1,9 +1,8 @@
 ---
 layout: default.html.ejs
 title: Asciidoctor Test
+note: Cobbled together from See http://asciidoctor.org documentation
 ---
-
-See http://asciidoctor.org for documentation
 
 Document Title
 ==============
