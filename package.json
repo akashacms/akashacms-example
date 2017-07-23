@@ -27,14 +27,14 @@
     "akashacms-footnotes": "akashacms/akashacms-footnotes",
     "akashacms-tagged-content": "akashacms/akashacms-tagged-content",
     "akashacms-theme-bootstrap": "akashacms/akashacms-theme-bootstrap",
-    "akasharender": ">=0.6.1",
+    "akasharender": "akashacms/akasharender",
     "bootstrap": "^3.3.7",
     "cheerio": "*",
     "debug": "^2.2.0",
     "epub-website": "akashacms/epub-website",
     "hostr": "^2.x",
     "jquery": "^3.1.1",
-    "mahabhuta": ">=0.6.3",
+    "mahabhuta": "akashacms/mahabhuta",
     "oembetter": "^0.1.14"
   }
 }
