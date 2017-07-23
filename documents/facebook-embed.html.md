@@ -1,6 +1,6 @@
 ---
 layout: default.html.ejs
-title: Test of embedding tweets
+title: Test of embedding Facebook
 tags: Twitter Embed, Embed
 ---
 
