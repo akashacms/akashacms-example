@@ -6,6 +6,7 @@
   },
   "name": "akashacms-example",
   "description": "AkashaCMS Example website",
+  "version": "0.6.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/akashacms/akashacms-example.git"
@@ -31,7 +32,8 @@
     "bootstrap": "^3.3.7",
     "cheerio": "*",
     "debug": "^2.2.0",
-    "epub-website": "akashacms/epub-website",
+    "epub-skeleton": "github:akashacms/epub-skeleton",
+    "epub-website": "github:akashacms/epub-website",
     "hostr": "^2.x",
     "jquery": "^3.1.1",
     "mahabhuta": "akashacms/mahabhuta",

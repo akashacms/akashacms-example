@@ -23,6 +23,13 @@ config
     })
     .addLayoutsDir('layouts')
     .addDocumentsDir('documents')
+    .addDocumentsDir({
+        src: 'node_modules/epub-skeleton/documents',
+        dest: 'epub-skeleton',
+        baseMetadata: {
+            bookHomeURL: "/epub-skeleton/toc.html"
+        }
+    })
     .addPartialsDir('partials');
 
 config
@@ -35,7 +42,8 @@ config
     .use(require('akashacms-external-links'))
     .use(require('akashacms-footnotes'))
     .use(require('akashacms-affiliates'))
-    .use(require('akashacms-tagged-content'));
+    .use(require('akashacms-tagged-content'))
+    .use(require('epub-website'));
 
 config.plugin("akashacms-base").generateSitemap(config, true);
 
