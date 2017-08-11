@@ -1,0 +1,310 @@
+---
+layout: default.html.ejs
+title: Asciidoctor Test
+note: Cobbled together from See http://asciidoctor.org documentation
+attributeName:  attributeValue
+---
+
+Document Title
+==============
+Doc Writer <thedoc@asciidoctor.org>
+:idprefix: id_
+
+Preamble paragraph.
+
+NOTE: This is test, only a test.
+
+Testing attributes -- Name {attributeName} value {attributeValue}
+
+layout - {layout}
+
+title - {title}
+
+note - {note}
+
+idprefix - {idprefix}
+
+:anotherAttribute: attribute values
+
+another - {anotherAttribute}
+
+== Section A
+
+*Section A* paragraph.
+
+=== Section A Subsection
+
+*Section A* 'subsection' paragraph.
+
+== Section B
+
+*Section B* paragraph.
+
+.Section B list
+* Item 1
+* Item 2
+* Item 3
+
+
+A normal paragraph.
+
+ A paragraph offset by at least one space becomes a literal paragraph.
+ All lines in a literal paragraph must be adjacent.
+
+ A literal paragraph is displayed as preformatted text.
+ The text is shown in a fixed-width font.
+ Spaces and newlines,
+ like the ones in this sentence,
+ are preserved.
+
+Another normal paragraph.
+
+NOTE: An admonition paragraph draws the reader's attention to
+auxiliary information.
+Its purpose is determined by the label
+at the beginning of the paragraph.
+
+Here are the other built-in admonition types:
+
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+[.lead]
+This text will be styled as a lead paragraph (i.e., larger font).
+
+*bold phrase* & **char**acter**s**
+
+_italic phrase_ & __char__acter__s__
+
+*_bold italic phrase_* & **__char__**acter**__s__**
+
+`monospace phrase` & ``char``acter``s``
+
+`*monospace bold phrase*` & ``**char**``acter``**s**``
+
+`_monospace italic phrase_` & ``__char__``acter``__s__``
+
+`*_monospace bold italic phrase_*` &
+``**__char__**``acter``**__s__**``
+
+Werewolves are allergic to #cassia cinnamon#.
+
+Did the werewolves read the [.small]#small print#?
+
+Where did all the [.underline]#cores# run off to?
+
+We need [.line-through]#ten# make that twenty VMs.
+
+[.big]##O##nce upon an infinite loop.
+
+^super^script phrase
+
+~sub~script phrase
+
+"`double curved quotes`"
+
+Olaf's desk was a mess.
+
+Unordered lists
+
+* Edgar Allen Poe
+* Sheri S. Tepper
+* Bill Bryson
+
+- Edgar Allen Poe
+- Sheri S. Tepper
+- Bill Bryson
+
+Ordered lists
+
+. Step 1
+. Step 2
+. Step 3
+
+. level 1
+.. level 2
+... level 3
+.... level 4
+..... level 5
+. level 1
+
+Checklist
+
+* [*] checked
+* [x] also checked
+* [ ] not checked
+*     normal list item
+
+Definitions
+
+first term:: definition of first term
+second term:: definition of second term
+
+first term::
+definition of first term
+section term::
+definition of second term
+
+
+[qanda]
+What is Asciidoctor?::
+  An implementation of the AsciiDoc processor in Ruby.
+What is the answer to the Ultimate Question?:: 42
+
+
+Operating Systems::
+  Linux:::
+    . Fedora
+      * Desktop
+    . Ubuntu
+      * Desktop
+      * Server
+  BSD:::
+    . FreeBSD
+    . NetBSD
+
+Cloud Providers::
+  PaaS:::
+    . OpenShift
+    . CloudBees
+  IaaS:::
+    . Amazon EC2
+    . Rackspace
+
+
+Links
+
+http://asciidoctor.org - automatic!
+
+http://asciidoctor.org[Asciidoctor]
+
+https://github.com/asciidoctor[Asciidoctor @ *GitHub*]
+
+Inline anchors
+
+[[bookmark-a]]Inline anchors make arbitrary content referenceable.
+
+[#bookmark-b]#Inline anchors can be applied to a phrase like this one.#
+
+anchor:bookmark-c[]Use a cross reference to link to this location.
+
+[[bookmark-d,last paragraph]]The xreflabel attribute will be used as link text in the cross-reference link.
+
+Source code
+
+Reference code like `types` or `methods` inline.
+
+....
+error: The requested operation returned error: 1954 Forbidden search for defensive operations manual
+absolutely fatal: operation initiation lost in the dodecahedron of doom
+would you like to die again? y/n
+....
+
+Listing block with title, no syntax highlighting
+
+.Gemfile.lock
+----
+GEM
+  remote: https://rubygems.org/
+  specs:
+    asciidoctor (0.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  asciidoctor (~> 0.1.4)
+----
+
+Code block with title and syntax highlighting
+
+[[app-listing]]
+[source,ruby]
+.app.rb
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
+
+Code block with callouts
+
+[source,ruby]
+----
+require 'sinatra' // <1>
+
+get '/hi' do // <2>
+  "Hello World!" // <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> HTTP response body
+
+
+Sidebar
+
+.AsciiDoc history
+****
+AsciiDoc was first released in Nov 2002 by Stuart Rackham.
+It was designed from the start to be a shorthand syntax
+for producing professional documents like DocBook and LaTeX.
+****
+
+Sections with titles.  Any block can have a title, positioned above the block. A block title is a line of text that starts with a dot. The dot cannot be followed by a space.
+
+.Sample document
+====
+Here's a sample AsciiDoc document:
+
+[listing]
+....
+= Title of Document
+Doc Writer
+:toc:
+
+This guide provides...
+....
+
+The document header is useful, but not required.
+====
+
+[NOTE]
+====
+An admonition block may contain complex content.
+
+.A list
+- one
+- two
+- three
+
+Another paragraph.
+====
+
+
+Blockquote's
+
+[quote, Abraham Lincoln, Address delivered at the dedication of the Cemetery at Gettysburg]
+____
+Four score and seven years ago our fathers brought forth
+on this continent a new nation...
+____
+
+[quote, Albert Einstein]
+A person who never made a mistake never tried anything new.
+
+____
+A person who never made a mistake never tried anything new.
+____
+
+[quote, Charles Lutwidge Dodgson, 'Mathematician and author, also known as http://en.wikipedia.org/wiki/Lewis_Carroll[Lewis Carroll]']
+____
+If you don't know where you are going, any road will get you there.
+____
