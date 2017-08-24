@@ -2,7 +2,11 @@
 layout: default.html.ejs
 title: Asciidoctor Test
 note: Cobbled together from See http://asciidoctor.org documentation
-attributeName:  attributeValue
+attributeName:  attribute Value From metaData LiNe
+theTeaser: |
+  <p>This is a paragraph in a long attribute.</p>
+
+  <p>This is another paragraph in a long attribute.</p>
 ---
 
 Document Title
@@ -14,7 +18,7 @@ Preamble paragraph.
 
 NOTE: This is test, only a test.
 
-Testing attributes -- Name {attributeName} value {attributeValue}
+Testing attributes -- Name attributeName value {attributeName}
 
 layout - {layout}
 
@@ -27,6 +31,12 @@ idprefix - {idprefix}
 :anotherAttribute: attribute values
 
 another - {anotherAttribute}
+
+theTeaser - {theTeaser}
+
+:app-name: pass:quotes[MyApp^(C)^]
+
+app-name {app-name}
 
 == Section A
 
