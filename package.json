@@ -6,7 +6,7 @@
   },
   "name": "akashacms-example",
   "description": "AkashaCMS Example website",
-  "version": "0.6.1",
+  "version": "0.6.4",
   "repository": {
     "type": "git",
     "url": "git://github.com/akashacms/akashacms-example.git"
