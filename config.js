@@ -3,6 +3,7 @@
 
 const akasha  = require('akasharender');
 const path    = require('path');
+const util    = require('util');
 
 const log    = require('debug')('akashacms-example:configuration');
 const error  = require('debug')('akashacms-example:error-configuration');
@@ -10,6 +11,8 @@ const error  = require('debug')('akashacms-example:error-configuration');
 const config = new akasha.Configuration();
 
 config.rootURL("https://example.akashacms.com");
+
+config.configDir = __dirname;
 
 config
     .addAssetsDir('assets')
@@ -105,5 +108,11 @@ config.addMahabhuta(
     ]);
 
 config.prepare();
+
+// console.log(`AssetDirs: ${util.inspect(config.assetDirs)}`);
+// console.log(`DocumentDirs: ${util.inspect(config.documentDirs)}`);
+// console.log(`PartialDirs: ${util.inspect(config.partialsDirs)}`);
+// console.log(`LayoutDirs: ${util.inspect(config.layoutDirs)}`);
+// console.log(`RenderDestination: ${util.inspect(config.renderDestination)}`);
 
 module.exports = config;
