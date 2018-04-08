@@ -40,6 +40,7 @@ config
     .use(require('akashacms-base'))
     .use(require('akashacms-breadcrumbs'))
     .use(require('akashacms-booknav'))
+    .use(require('akashacms-dlassets'))
     .use(require('akashacms-document-viewers'))
     .use(require('akashacms-embeddables'))
     .use(require('akashacms-external-links'))
