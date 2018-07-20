@@ -24,6 +24,10 @@ config
         src: 'node_modules/jquery/dist',
         dest: 'vendor/jquery'
     })
+    .addAssetsDir({
+        src: 'vue-js-examples/example-1/dist',
+        dest: 'vue-js/example-01'
+    })
     .addLayoutsDir('layouts')
     .addDocumentsDir('documents')
     .addDocumentsDir({

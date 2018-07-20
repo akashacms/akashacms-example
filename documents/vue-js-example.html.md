@@ -4,18 +4,20 @@ title: Example of embedding Vue.js application in AkashaCMS page
 headerJavaScriptAddTop: 
         - href: https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js
         #  lang: application/javascript
+headerStylesheetsAdd:
+        - href: /vue-js-example.css
 ---
 
 If this works, the following will say _Hello Vue_
 
-<div id="app">
+<div id="app-1" class="vue-js-example">
   {{ message }}
 </div>
 
 <script>
 
 var app = new Vue({
-  el: '#app',
+  el: '#app-1',
   data: {
     message: 'Hello Vue!'
   }
@@ -23,7 +25,7 @@ var app = new Vue({
 
 </script>
 
-<div id="app-2">
+<div id="app-2" class="vue-js-example">
   <span v-bind:title="message">
     SECOND VUE APPLICATION:  Hover your mouse over me for a few seconds
     to see my dynamically bound title!
@@ -41,7 +43,7 @@ var app2 = new Vue({
 
 Third Vue application
 
-<div id="app-4">
+<div id="app-4" class="vue-js-example">
   <ol>
     <li v-for="todo in todos">
       {{ todo.text }}
@@ -65,7 +67,7 @@ var app4 = new Vue({
 
 Fourth Vue application
 
-<div id="app-5">
+<div id="app-5" class="vue-js-example">
   <p>{{ message }}</p>
   <button v-on:click="reverseMessage">Reverse Message</button>
 </div>
@@ -83,4 +85,9 @@ var app5 = new Vue({
   }
 });
 </script>
+
+Last Vue.js example - built using `vue init webpack-simple example-1`
+
+<div id="app-example-01" class="vue-js-example"></div>
+<script src="/vue-js/example-01/build.js"></script>
 

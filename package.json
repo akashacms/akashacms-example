@@ -12,8 +12,10 @@
     "url": "git://github.com/akashacms/akashacms-example.git"
   },
   "scripts": {
-    "prebuild": "akasharender copy-assets config.js",
+    "prebuild": "akasharender copy-assets config.js && npm run build-vue-js",
     "build": "akasharender render config.js",
+    "build-vue-js": "npm run build-vue-js-example-1",
+    "build-vue-js-example-1": "cd vue-js-examples/example-1 && npm run build",
     "deploy": "cd out && rsync --archive --delete --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
     "preview": "cd out && ../node_modules/.bin/hostr"
   },
