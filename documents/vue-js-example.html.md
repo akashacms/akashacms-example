@@ -1,7 +1,9 @@
 ---
 layout: default.html.ejs
 title: Example of embedding Vue.js application in AkashaCMS page
-headerJavaScriptAddBottom: https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js
+headerJavaScriptAddBottom: 
+        - href: https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js
+          lang: application/javascript
 ---
 
 If this works, the following will say _Hello Vue_
