@@ -5,9 +5,6 @@ const akasha  = require('akasharender');
 const path    = require('path');
 const util    = require('util');
 
-const log    = require('debug')('akashacms-example:configuration');
-const error  = require('debug')('akashacms-example:error-configuration');
-
 const config = new akasha.Configuration();
 
 config.rootURL("https://example.akashacms.com");

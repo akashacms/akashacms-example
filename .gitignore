@@ -29,6 +29,12 @@ node_modules
 
 out
 out2
+out-ok
 
 
 akashacms-embeddables.db
+
+npm-debug.log
+
+package-lock.json
+
