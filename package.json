@@ -40,6 +40,7 @@
     "hostr": "^2.x",
     "jquery": "^3.1.1",
     "mahabhuta": "github:akashacms/mahabhuta",
+    "markdown-it-plantuml": "^1.4.1",
     "oembetter": "^0.1.19"
   }
 }

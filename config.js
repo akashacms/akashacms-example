@@ -11,6 +11,11 @@ config.rootURL("https://example.akashacms.com");
 
 config.configDir = __dirname;
 
+config.findRendererName('.html.md')
+    .use(require('markdown-it-plantuml'), {
+        imageFormat: 'svg'
+    });
+
 config
     .addAssetsDir('assets')
     .addAssetsDir({
@@ -38,7 +43,9 @@ config
 
 config
     .use(require('akashacms-theme-bootstrap'))
-    .use(require('akashacms-base'))
+    .use(require('akashacms-base'), {
+        generateSitemapFlag: true
+    })
     .use(require('akashacms-breadcrumbs'))
     .use(require('akashacms-booknav'))
     .use(require('akashacms-dlassets'))
@@ -49,8 +56,6 @@ config
     .use(require('akashacms-affiliates'))
     .use(require('akashacms-tagged-content'))
     .use(require('epub-website'));
-
-config.plugin("akashacms-base").generateSitemap(config, true);
 
 config.plugin("akashacms-affiliates")
     .amazonAffiliateCode(config, 'com', 'thereikipage')
