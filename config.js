@@ -27,6 +27,10 @@ config
         dest: 'vendor/jquery'
     })
     .addAssetsDir({
+        src: 'node_modules/popper.js/dist',
+        dest: 'vendor/popper.js'
+    })
+    .addAssetsDir({
         src: 'vue-js-examples/example-1/dist',
         dest: 'vue-js/example-01'
     })
@@ -48,13 +52,50 @@ config
     })
     .use(require('akashacms-breadcrumbs'))
     .use(require('akashacms-booknav'))
+    .use(require('@akashacms/plugins-authors'), {
+        default: "boygeorge",
+        authors: [
+            {
+                code: "boygeorge",
+                fullname: "Boy George",
+                url: "URL",
+                bio: "<p>Weird ass british rocker</p>"
+            },
+            {
+                code: "eltonjohn",
+                fullname: "Elton John",
+                url: "URL",
+                bio: "<p>Mainstream british rocker</p>"
+            }
+        ]
+    })
     .use(require('akashacms-dlassets'))
     .use(require('akashacms-document-viewers'))
     .use(require('akashacms-embeddables'))
     .use(require('akashacms-external-links'))
     .use(require('akashacms-footnotes'))
     .use(require('akashacms-affiliates'))
-    .use(require('akashacms-tagged-content'))
+    .use(require('akashacms-tagged-content'), {
+        sortBy: 'title',
+        // @tagDescription@ can only appear once
+        headerTemplate: "---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p><a href='./index.html'>Tag Index</a></p><p>Pages with tag @tagName@</p><p>@tagDescription@</p>",
+        indexTemplate: "---\ntitle: Tags for AkashaCMS Example site\nlayout: tagpage.html.ejs\n---\n",
+        pathIndexes: '/tags/',
+        tags: [
+            {
+                name: "Embed",
+                description: "Testing embeddeble thingies"
+            },
+            {
+                name: "Eenie",
+                description: "EENIE"
+            },
+            {
+                name: "Meenie",
+                description: "MEENIE"
+            }
+        ]
+    })
     .use(require('epub-website'));
 
 config.plugin("akashacms-affiliates")
@@ -90,9 +131,9 @@ config.plugin("akashacms-external-links")
 
 config
     .addFooterJavaScript({ href: "/vendor/jquery/jquery.min.js" })
-    .addFooterJavaScript({ href: "/vendor/bootstrap/js/bootstrap.min.js"  })
-    .addStylesheet({       href: "/vendor/bootstrap/css/bootstrap.min.css" })
-    .addStylesheet({       href: "/vendor/bootstrap/css/bootstrap-theme.min.css" })
+    .addFooterJavaScript({ href: "/vendor/popper.js/umd/popper.min.js" })
+    .addFooterJavaScript({ href: "/vendor/bootstrap/js/bootstrap.min.js" })
+    .addStylesheet({ href: "/vendor/bootstrap/css/bootstrap.min.css" })
     .addStylesheet({       href: "/style.css" });
 
 config.setMahabhutaConfig({
@@ -101,10 +142,10 @@ config.setMahabhutaConfig({
     decodeEntities: true
 });
 
-config.plugin("akashacms-tagged-content")
+/* config.plugin("akashacms-tagged-content")
     .sortBy('title')
     .headerTemplate("---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p>Pages with tag @tagName@</p>")
-    .tagsDirectory('/tags/');
+    .tagsDirectory('/tags/'); */
 
 config.addMahabhuta(
     [
