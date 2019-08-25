@@ -100,7 +100,8 @@ config
 
 config.plugin("akashacms-affiliates")
     .amazonAffiliateCode(config, 'com', 'thereikipage')
-    .loadAffiliateProducts(config, 'affiliate-products.yml')
+    .loadAffiliateProducts(config, 
+        path.join(__dirname, 'affiliate-products.yml'))
     .noSkimlinksDomain(config, 'amazon.com')
     .noViglinksDomain(config, 'amazon.com');
 

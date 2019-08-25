@@ -17,7 +17,9 @@
     "build-vue-js": "npm run build-vue-js-example-1",
     "build-vue-js-example-1": "cd vue-js-examples/example-1 && npm install && npm run build",
     "deploy": "cd out && rsync --archive --delete --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
-    "preview": "cd out && ../node_modules/.bin/hostr"
+    "preview": "cd out && ../node_modules/.bin/hostr",
+    "pretest": "npm run build",
+    "test": "cd test && mocha ./index"
   },
   "dependencies": {
     "akashacms-affiliates": "github:akashacms/akashacms-affiliates",
@@ -43,6 +45,8 @@
     "hostr": "^2.x",
     "mahabhuta": "github:akashacms/mahabhuta",
     "markdown-it-plantuml": "^1.4.1",
-    "oembetter": "^0.1.19"
+    "oembetter": "^0.1.19",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
   }
 }
