@@ -4,9 +4,6 @@ const { assert } = require('chai');
 
 const config = require('../config.js');
 
-/* TODO update skeleton to use Bootstrap v4
- */
-
 describe('build site', function() {
     it('should build site', async function() {
         this.timeout(15000);
