@@ -17,7 +17,7 @@
     "build-vue-js": "npm run build-vue-js-example-1",
     "build-vue-js-example-1": "cd vue-js-examples/example-1 && npm install && npm run build",
     "deploy": "cd out && rsync --archive --delete --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
-    "preview": "cd out && ../node_modules/.bin/hostr",
+    "preview": "cd out && ws --log.format dev",
     "pretest": "npm run build",
     "test": "cd test && mocha ./index"
   },
@@ -42,7 +42,7 @@
     "epub-website": "github:akashacms/epub-website",
     "fs-extra": "^5.x",
     "globfs": ">=0.3",
-    "hostr": "^2.x",
+    "local-web-server": "^3.0.7",
     "mahabhuta": "github:akashacms/mahabhuta",
     "markdown-it-plantuml": "^1.4.1",
     "oembetter": "^0.1.19",

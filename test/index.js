@@ -237,4 +237,34 @@ describe('check tags', function() {
             "Mahabhuta (jQuery-like scripting) example");
     });
 
+
+    it('should have correct tags feeds page', async function() {
+
+        let { html, $ } = await akasha.readRenderedFile(config, 
+            '/feeds-tags.html');
+
+        assert.exists(html, 'result exists');
+        assert.isString(html, 'result isString');
+
+        assert.equal($('#tags-feeds-list').length, 1);
+
+        assert.equal($('#tags-feeds-list a[href="/tags/bar.xml"]').length, 1);
+
+        assert.include($('#tags-feeds-list a[href="/tags/bar.xml"]').attr('rel'), "alternate");
+        assert.include($('#tags-feeds-list a[href="/tags/bar.xml"]').attr('type'), "application/rss+xml");
+        assert.include($('#tags-feeds-list a[href="/tags/bar.xml"]').html(), "Bar");
+
+        assert.equal($('#tags-feeds-list a[href="/tags/footnotes.xml"]').length, 1);
+
+        assert.include($('#tags-feeds-list a[href="/tags/footnotes.xml"]').attr('rel'), "alternate");
+        assert.include($('#tags-feeds-list a[href="/tags/footnotes.xml"]').attr('type'), "application/rss+xml");
+        assert.include($('#tags-feeds-list a[href="/tags/footnotes.xml"]').html(), "Footnotes");
+
+        assert.equal($('#tags-feeds-list a[href="/tags/meenie.xml"]').length, 1);
+
+        assert.include($('#tags-feeds-list a[href="/tags/meenie.xml"]').attr('rel'), "alternate");
+        assert.include($('#tags-feeds-list a[href="/tags/meenie.xml"]').attr('type'), "application/rss+xml");
+        assert.include($('#tags-feeds-list a[href="/tags/meenie.xml"]').html(), "Meenie");
+    });
+
 });
