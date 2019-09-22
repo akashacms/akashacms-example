@@ -124,7 +124,7 @@ describe('check pages', function() {
         assert.exists(html, 'result exists');
         assert.isString(html, 'result isString');
 
-        assert.include($('a[href="markdown.html"]').html(),
+        assert.include($('a[href="/markdown.html"][title="Markdown example"]').html(),
             "Markdown example");
         
     });
