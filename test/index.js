@@ -40,19 +40,19 @@ describe('check pages', function() {
                 'https://example.akashacms.com/index.html');
         assert.include($('head link[rel="sitemap"]').attr('href'), '/sitemap.xml');
 
-        assert.equal($('head link[href="/akasha/epub-website/style.css"]').length, 1);
-        assert.equal($('head link[href="/vendor/bootstrap/css/bootstrap.min.css"]').length, 1);
-        assert.equal($('head link[href="/style.css"]').length, 1);
+        assert.equal($('head link[href="akasha/epub-website/style.css"]').length, 1);
+        assert.equal($('head link[href="vendor/bootstrap/css/bootstrap.min.css"]').length, 1);
+        assert.equal($('head link[href="style.css"]').length, 1);
 
 
         assert.include($('body header h1').html(), 'Akasha CMS example');
         
         assert.equal($('img[src="https://www.google.com/s2/favicons?domain=akashacms.com"]').length, 1);
-        assert.equal($('img[src="/img/extlink.png"]').length, 1);
+        assert.equal($('img[src="img/extlink.png"]').length, 1);
 
-        assert.equal($('body script[src="/vendor/jquery/jquery.min.js"]').length, 1);
-        assert.equal($('body script[src="/vendor/popper.js/umd/popper.min.js"]').length, 1);
-        assert.equal($('body script[src="/vendor/bootstrap/js/bootstrap.min.js"]').length, 1);
+        assert.equal($('body script[src="vendor/jquery/jquery.min.js"]').length, 1);
+        assert.equal($('body script[src="vendor/popper.js/umd/popper.min.js"]').length, 1);
+        assert.equal($('body script[src="vendor/bootstrap/js/bootstrap.min.js"]').length, 1);
     });
 
     it('should have correct affiliate links', async function() {
@@ -124,7 +124,7 @@ describe('check pages', function() {
         assert.exists(html, 'result exists');
         assert.isString(html, 'result isString');
 
-        assert.include($('a[href="/markdown.html"][title="Markdown example"]').html(),
+        assert.include($('a[href="markdown.html"][title="Markdown example"]').html(),
             "Markdown example");
         
     });
@@ -161,13 +161,13 @@ describe('check pages', function() {
         assert.exists(html, 'result exists');
         assert.isString(html, 'result isString');
 
-        assert.equal($('head link[href="/extra.css"]').length, 1);
-        assert.include($('head link[href="/extra.css"]').attr('media'),
+        assert.equal($('head link[href="extra.css"]').length, 1);
+        assert.include($('head link[href="extra.css"]').attr('media'),
             "screen");
 
-        assert.equal($('head script[src="/extraTop.js"]').length, 1);
+        assert.equal($('head script[src="extraTop.js"]').length, 1);
 
-        assert.equal($('body script[src="/extraBottom.js"]').length, 1);
+        assert.equal($('body script[src="extraBottom.js"]').length, 1);
 
     });
 
@@ -218,8 +218,8 @@ describe('check tags', function() {
         assert.isString(html, 'result isString');
 
         assert.equal($('span.taglist').length, 1);
-        assert.equal($('span.taglist a[href="/tags/mahabhuta.html"]').length, 1);
-        assert.include($('span.taglist a[href="/tags/mahabhuta.html"]').html(), "Mahabhuta");
+        assert.equal($('span.taglist a[href="tags/mahabhuta.html"]').length, 1);
+        assert.include($('span.taglist a[href="tags/mahabhuta.html"]').html(), "Mahabhuta");
 
     });
 
@@ -232,8 +232,8 @@ describe('check tags', function() {
         assert.isString(html, 'result isString');
 
         assert.equal($('ul.list-group li.list-group-item').length, 1);
-        assert.equal($('ul.list-group li.list-group-item a[href="/mahabhuta.html"]').length, 1);
-        assert.include($('ul.list-group li.list-group-item a[href="/mahabhuta.html"]').html(),
+        assert.equal($('ul.list-group li.list-group-item a[href="../mahabhuta.html"]').length, 1);
+        assert.include($('ul.list-group li.list-group-item a[href="../mahabhuta.html"]').html(),
             "Mahabhuta (jQuery-like scripting) example");
     });
 
@@ -248,23 +248,23 @@ describe('check tags', function() {
 
         assert.equal($('#tags-feeds-list').length, 1);
 
-        assert.equal($('#tags-feeds-list a[href="/tags/bar.xml"]').length, 1);
+        assert.equal($('#tags-feeds-list a[href="tags/bar.xml"]').length, 1);
 
-        assert.include($('#tags-feeds-list a[href="/tags/bar.xml"]').attr('rel'), "alternate");
-        assert.include($('#tags-feeds-list a[href="/tags/bar.xml"]').attr('type'), "application/rss+xml");
-        assert.include($('#tags-feeds-list a[href="/tags/bar.xml"]').html(), "Bar");
+        assert.include($('#tags-feeds-list a[href="tags/bar.xml"]').attr('rel'), "alternate");
+        assert.include($('#tags-feeds-list a[href="tags/bar.xml"]').attr('type'), "application/rss+xml");
+        assert.include($('#tags-feeds-list a[href="tags/bar.xml"]').html(), "Bar");
 
-        assert.equal($('#tags-feeds-list a[href="/tags/footnotes.xml"]').length, 1);
+        assert.equal($('#tags-feeds-list a[href="tags/footnotes.xml"]').length, 1);
 
-        assert.include($('#tags-feeds-list a[href="/tags/footnotes.xml"]').attr('rel'), "alternate");
-        assert.include($('#tags-feeds-list a[href="/tags/footnotes.xml"]').attr('type'), "application/rss+xml");
-        assert.include($('#tags-feeds-list a[href="/tags/footnotes.xml"]').html(), "Footnotes");
+        assert.include($('#tags-feeds-list a[href="tags/footnotes.xml"]').attr('rel'), "alternate");
+        assert.include($('#tags-feeds-list a[href="tags/footnotes.xml"]').attr('type'), "application/rss+xml");
+        assert.include($('#tags-feeds-list a[href="tags/footnotes.xml"]').html(), "Footnotes");
 
-        assert.equal($('#tags-feeds-list a[href="/tags/meenie.xml"]').length, 1);
+        assert.equal($('#tags-feeds-list a[href="tags/meenie.xml"]').length, 1);
 
-        assert.include($('#tags-feeds-list a[href="/tags/meenie.xml"]').attr('rel'), "alternate");
-        assert.include($('#tags-feeds-list a[href="/tags/meenie.xml"]').attr('type'), "application/rss+xml");
-        assert.include($('#tags-feeds-list a[href="/tags/meenie.xml"]').html(), "Meenie");
+        assert.include($('#tags-feeds-list a[href="tags/meenie.xml"]').attr('rel'), "alternate");
+        assert.include($('#tags-feeds-list a[href="tags/meenie.xml"]').attr('type'), "application/rss+xml");
+        assert.include($('#tags-feeds-list a[href="tags/meenie.xml"]').html(), "Meenie");
     });
 
 });
