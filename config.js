@@ -46,7 +46,7 @@ config
     .addPartialsDir('partials');
 
 config
-    .use(require('akashacms-theme-bootstrap'))
+    .use(require('@akashacms/theme-bootstrap'))
     .use(require('akashacms-base'), {
         generateSitemapFlag: true
     })

@@ -6,7 +6,7 @@ const config = require('../config.js');
 
 describe('build site', function() {
     it('should build site', async function() {
-        this.timeout(15000);
+        this.timeout(60000);
         let failed = false;
         let results = await akasha.render(config);
         for (let result of results) {
