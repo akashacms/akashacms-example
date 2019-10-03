@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "akashacms-affiliates": "github:akashacms/akashacms-affiliates",
-    "akashacms-base": "github:akashacms/akashacms-base",
+    "@akashacms/plugins-base": "github:akashacms/akashacms-base",
     "akashacms-booknav": "github:akashacms/akashacms-booknav",
     "akashacms-breadcrumbs": "github:akashacms/akashacms-breadcrumbs",
     "akashacms-dlassets": "github:akashacms/akashacms-dlassets",
