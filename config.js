@@ -75,7 +75,7 @@ config
     .use(require('akashacms-external-links'))
     .use(require('akashacms-footnotes'))
     .use(require('akashacms-affiliates'))
-    .use(require('akashacms-tagged-content'), {
+    .use(require('@akashacms/plugins-tagged-content'), {
         sortBy: 'title',
         // @tagDescription@ can only appear once
         headerTemplate: "---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p><a href='./index.html'>Tag Index</a></p><p>Pages with tag @tagName@</p><p>@tagDescription@</p>",

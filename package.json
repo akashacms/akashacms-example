@@ -31,7 +31,7 @@
     "akashacms-embeddables": "github:akashacms/akashacms-embeddables",
     "akashacms-external-links": "github:akashacms/akashacms-external-links",
     "akashacms-footnotes": "github:akashacms/akashacms-footnotes",
-    "akashacms-tagged-content": "github:akashacms/akashacms-tagged-content",
+    "@akashacms/plugins-tagged-content": "github:akashacms/akashacms-tagged-content",
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap",
     "@akashacms/plugins-authors": "github:akashacms/akashacms-plugin-authors",
     "akasharender": "github:akashacms/akasharender",
