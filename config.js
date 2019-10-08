@@ -73,7 +73,7 @@ config
     .use(require('akashacms-document-viewers'))
     .use(require('akashacms-embeddables'))
     .use(require('akashacms-external-links'))
-    .use(require('akashacms-footnotes'))
+    .use(require('@akashacms/plugins-footnotes'))
     .use(require('akashacms-affiliates'))
     .use(require('@akashacms/plugins-tagged-content'), {
         sortBy: 'title',
