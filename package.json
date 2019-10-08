@@ -24,7 +24,7 @@
   "dependencies": {
     "akashacms-affiliates": "github:akashacms/akashacms-affiliates",
     "@akashacms/plugins-base": "github:akashacms/akashacms-base",
-    "akashacms-booknav": "github:akashacms/akashacms-booknav",
+    "@akashacms/plugins-booknav": "github:akashacms/akashacms-booknav",
     "akashacms-breadcrumbs": "github:akashacms/akashacms-breadcrumbs",
     "akashacms-dlassets": "github:akashacms/akashacms-dlassets",
     "akashacms-document-viewers": "github:akashacms/akashacms-document-viewers",

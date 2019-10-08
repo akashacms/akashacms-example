@@ -51,7 +51,7 @@ config
         generateSitemapFlag: true
     })
     .use(require('akashacms-breadcrumbs'))
-    .use(require('akashacms-booknav'))
+    .use(require('@akashacms/plugins-booknav'))
     .use(require('@akashacms/plugins-authors'), {
         default: "boygeorge",
         authors: [
