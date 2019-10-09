@@ -71,7 +71,7 @@ config
     })
     .use(require('akashacms-dlassets'))
     .use(require('@akashacms/plugins-document-viewers'))
-    .use(require('akashacms-embeddables'))
+    .use(require('@akashacms/plugins-embeddables'))
     .use(require('akashacms-external-links'))
     .use(require('@akashacms/plugins-footnotes'))
     .use(require('akashacms-affiliates'))
