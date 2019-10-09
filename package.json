@@ -27,7 +27,7 @@
     "@akashacms/plugins-booknav": "github:akashacms/akashacms-booknav",
     "@akashacms/plugins-breadcrumbs": "github:akashacms/akashacms-breadcrumbs",
     "akashacms-dlassets": "github:akashacms/akashacms-dlassets",
-    "akashacms-document-viewers": "github:akashacms/akashacms-document-viewers",
+    "@akashacms/plugins-document-viewers": "github:akashacms/akashacms-document-viewers",
     "akashacms-embeddables": "github:akashacms/akashacms-embeddables",
     "akashacms-external-links": "github:akashacms/akashacms-external-links",
     "@akashacms/plugins-footnotes": "github:akashacms/akashacms-footnotes",
