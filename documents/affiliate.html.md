@@ -13,7 +13,6 @@ products:
       productrel: "nofollow noskim"
       productdescription: |
         <p>An excellent introduction to web application development in Node.js. It takes you from zero knowledge (assuming you have basic skills in programming, HTML and JavaScript), and takes you all the way to a pseudo-real-time chat application running between browsers, and writing unit testing. Along the way you learn about user authentication using Passport, application deployment on real servers using Docker, unit testing and a whole bunch of other stuff. The intent is to show you the full lifecycle of Node.js application development, and to give you a solid grasp of every aspect. The focus is on typical web applications, where there are web pages being displayed in a browser, and on using the Express framework.</p>
-
         <p>NOTE -- I am the author of this book.</p>
       productamzn:
         - asin: "1785881507"
