@@ -38,7 +38,7 @@ describe('check pages', function() {
                 'https://example.akashacms.com/index.html');
         assert.include($('head link[rel="canonical"]').attr('href'), 
                 'https://example.akashacms.com/index.html');
-        assert.include($('head link[rel="sitemap"]').attr('href'), '/sitemap.xml');
+        assert.include($('head link[rel="sitemap"]').attr('href'), 'sitemap.xml');
 
         assert.equal($('head link[href="akasha/epub-website/style.css"]').length, 1);
         assert.equal($('head link[href="vendor/bootstrap/css/bootstrap.min.css"]').length, 1);
@@ -47,8 +47,8 @@ describe('check pages', function() {
 
         assert.include($('body header h1').html(), 'Akasha CMS example');
         
-        assert.equal($('img[src="https://www.google.com/s2/favicons?domain=akashacms.com"]').length, 1);
-        assert.equal($('img[src="img/extlink.png"]').length, 1);
+        assert.equal($('img[src="https://www.google.com/s2/favicons?domain=akashacms.com"]').length, 2);
+        assert.equal($('img[src="img/extlink.png"]').length, 2);
 
         assert.equal($('body script[src="vendor/jquery/jquery.min.js"]').length, 1);
         assert.equal($('body script[src="vendor/popper.js/umd/popper.min.js"]').length, 1);
