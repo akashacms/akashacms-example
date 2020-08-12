@@ -17,7 +17,7 @@
     "build-vue-js": "npm run build-vue-js-example-1",
     "build-vue-js-example-1": "cd vue-js-examples/example-1 && npm install && npm run build",
     "deploy": "cd out && rsync --archive --delete --exclude '.well-known' --exclude '.well-known/*' --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
-    "gh-pages": "akasharender gh-pages-publish",
+    "gh-pages": "akasharender gh-pages-publish config.js",
     "preview": "cd out && ws --log.format dev",
     "pretest": "npm run build",
     "test": "cd test && mocha ./index"
