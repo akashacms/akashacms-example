@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="267px" preserveAspectRatio="none" style="width:208px;height:267px;" version="1.1" viewBox="0 0 208 267" width="208px" zoomAndPan="magnify"><defs><filter height="300%" id="f1gah3vz44xqxt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="63.5" cy="16" fill="#000000" filter="url(#f1gah3vz44xqxt)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FEFECE" filter="url(#f1gah3vz44xqxt)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="93" x="17" y="67"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="27" y="88.1387">First Activity</text><rect fill="#FEFECE" filter="url(#f1gah3vz44xqxt)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #A80036; stroke-width: 1.5;" width="113" x="7" y="155"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="93" x="17" y="176.1387">Second Activity</text><ellipse cx="63.5" cy="240" fill="none" filter="url(#f1gah3vz44xqxt)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="64" cy="240.5" fill="#000000" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><!--MD5=[7b51c630cb61ed9b5d850ed70c977c40]
+link start to First Activity--><path d="M63.5,26.177 C63.5,35.269 63.5,49.527 63.5,61.485 " fill="none" id="start-&gt;First Activity" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="63.5,66.791,67.5,57.791,63.5,61.791,59.5,57.791,63.5,66.791" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6bcf6ea5361ee4e59421f63d99fbee0a]
+link First Activity to Second Activity--><path d="M63.5,101.176 C63.5,114.87 63.5,134.606 63.5,149.605 " fill="none" id="First Activity-&gt;Second Activity" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="63.5,154.8966,67.5,145.8966,63.5,149.8966,59.5,145.8966,63.5,154.8966" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="132" x="64.5" y="132.2104">You can put also labels</text><!--MD5=[53f95cfb746dba279ce9e70d89122c70]
+link Second Activity to end--><path d="M63.5,189.3146 C63.5,200.2368 63.5,214.4683 63.5,224.8993 " fill="none" id="Second Activity-&gt;end" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="63.5,229.97,67.5,220.97,63.5,224.97,59.5,220.97,63.5,229.97" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[84b4d08b5f1c72a6a81e6748e1fda708]
+@startuml
+(*) - -> "First Activity"
+- ->[You can put also labels] "Second Activity"
+- -> (*)
+@enduml
+
+PlantUML version 1.2020.16beta7(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
