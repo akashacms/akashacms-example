@@ -16,8 +16,6 @@
 
 
 
-
-
  
  
  
@@ -45,7 +43,7 @@
 
 
 
-<meta name="date" content="Wed Aug 12 2020 11:39:22 GMT-0700 (Pacific Daylight Time)">
+
 
 <meta name="DC.title" content="Example of embedding Vue.js application in AkashaCMS page">
 
@@ -103,11 +101,19 @@
 
 <link rel="canonical" href="https://example.akashacms.com/vue-js-example.html">
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+<!-- <ak-header-metatags></ak-header-metatags> -->
+<link rel="sitemap" type="application/xml" href="sitemap.xml">
 
 
+<!--
+<xml-sitemap></xml-sitemap>
+<site-verification></site-verification>
+<ak-header-linkreltags></ak-header-linkreltags>
+-->
 <link rel="stylesheet" type="text/css" href="akasha/epub-website/style.css"><link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="style.css"><link rel="stylesheet" type="text/css" href="vue-js-example.css">
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<!-- ak-stylesheets></ak-stylesheets -->
+<script src="___dlassets/cdn_jsdelivr_net/npm/vue@2.5.16/dist/vue.js" data-orig-src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<!-- ak-headerJavaScript></ak-headerJavaScript -->
 <open-graph-promote-images root="article"></open-graph-promote-images>
 </head>
 <body>
@@ -257,6 +263,7 @@ var app5 = new Vue({
 
 <!-- JavaScript at the bottom for fast page loading -->
 <script src="vendor/jquery/jquery.min.js"></script><script src="vendor/popper.js/umd/popper.min.js"></script><script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!-- <ak-footerJavaScript></ak-footerJavaScript> -->
 
 </body>
 </html>
