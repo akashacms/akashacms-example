@@ -16,23 +16,15 @@
 <% } else if (typeof title !== "undefined") { %>
     <title><%= title %></title>
 <% } %>
-<%- partialSync("ak_headermeta.html.njk", locals) %>
-<!-- <ak-header-metatags></ak-header-metatags> -->
-<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
-<%- config.plugin("@akashacms/plugins-base").doLinkRelTags() %>
-<%- config.plugin("@akashacms/plugins-base").doCanonicalURL(rendered_url) %>
-<!--
+<ak-header-metatags></ak-header-metatags>
 <xml-sitemap></xml-sitemap>
 <site-verification></site-verification>
 <ak-header-linkreltags></ak-header-linkreltags>
--->
-<%- config.plugin("akashacms-builtin").doStylesheets(locals) %>
-<!-- ak-stylesheets></ak-stylesheets -->
-<%- config.plugin("akashacms-builtin").doHeaderJavaScript(locals) %>
-<!-- ak-headerJavaScript></ak-headerJavaScript -->
-<open-graph-promote-images root="article"></open-graph-promote-images>
+<ak-stylesheets></ak-stylesheets>
+<ak-headerJavaScript></ak-headerJavaScript>
 </head>
 <body>
+
 
 <partial file-name="headernav.html.ejs" <%
     if (typeof documenttitle !== "undefined") {
@@ -41,13 +33,15 @@
         %> title="<%= title %>" <%
     } %>></partial>
 
+<div class="container" role="main">
 <div class="row">
-<article class="col-md-10 col-sm-10">
-  <breadcrumb-trail/>
-  <%- content %>
-  <book-child-tree></book-child-tree>
+<!-- include our document's content -->
+<article class="col-md-10">
+    <div id="breadcrumbs"><breadcrumb-trail></breadcrumb-trail></div>
+          <ebook-navigation-header id="ebook-navigation" class="panel-heading"></ebook-navigation-header>
+    <%- content %>
 </article>
-<section id="right" class="col-md-2 col-sm-2">
+<section id="right" class="col-md-2">
     <p>right sidebar</p>
     <tag-cloud/>
 </section>
@@ -57,13 +51,13 @@
 <footer class="col-md-12">
 <!-- footer -->
 </footer>
+</row>
+
 </div>
 
 
 <!-- JavaScript at the bottom for fast page loading -->
-<%- config.plugin("akashacms-builtin").doFooterJavaScript(locals) %>
-<!-- <ak-footerJavaScript></ak-footerJavaScript> -->
-
+<ak-footerJavaScript></ak-footerJavaScript>
 <partial file-name="google-analytics.html"></partial>
 </body>
 </html>

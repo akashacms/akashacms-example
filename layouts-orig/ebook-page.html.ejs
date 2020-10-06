@@ -15,20 +15,12 @@
 <% } else if (typeof title !== "undefined") { %>
     <title><%= title %></title>
 <% } %>
-<%- partialSync("ak_headermeta.html.njk", locals) %>
-<!-- <ak-header-metatags></ak-header-metatags> -->
-<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
-<%- config.plugin("@akashacms/plugins-base").doLinkRelTags() %>
-<%- config.plugin("@akashacms/plugins-base").doCanonicalURL(rendered_url) %>
-<!--
+<ak-header-metatags></ak-header-metatags>
 <xml-sitemap></xml-sitemap>
 <site-verification></site-verification>
 <ak-header-linkreltags></ak-header-linkreltags>
--->
-<%- config.plugin("akashacms-builtin").doStylesheets(locals) %>
-<!-- ak-stylesheets></ak-stylesheets -->
-<%- config.plugin("akashacms-builtin").doHeaderJavaScript(locals) %>
-<!-- ak-headerJavaScript></ak-headerJavaScript -->
+<ak-stylesheets></ak-stylesheets>
+<ak-headerJavaScript></ak-headerJavaScript>
 <open-graph-promote-images root="div.panel-body"></open-graph-promote-images>
 
 <style>
@@ -103,8 +95,7 @@ html, body {
     </footer>
 </div>
 
-<%- config.plugin("akashacms-builtin").doFooterJavaScript(locals) %>
-<!-- <ak-footerJavaScript></ak-footerJavaScript> -->
+<ak-footerJavaScript></ak-footerJavaScript>
 
 
 </body>
