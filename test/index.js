@@ -179,6 +179,9 @@ describe('check pages', function() {
         assert.exists(html, 'result exists');
         assert.isString(html, 'result isString');
 
+        /*
+         * We can no longer rely on this.  See akashacms-embeddables for rationale.
+
         assert.equal($('body div.embed-responsive').length, 1);
 
         assert.equal($('body div.embed-responsive div.fb-post').length, 1);
@@ -188,6 +191,7 @@ describe('check pages', function() {
 
         assert.include($('body div.embed-responsive div.fb-post a[href="https://www.facebook.com/joseph.romm"]')
             .html(), "Joseph Romm");
+        */
 
     });
 
