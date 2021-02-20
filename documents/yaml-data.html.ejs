@@ -1,0 +1,20 @@
+---
+layout: default.html.ejs
+title: YAML example
+data:
+    Row1: "value 1"
+    Row2: "value 2"
+    Row3: "value 3"
+---
+
+<ul>
+<%
+console.log(data);
+var keys = Object.keys(data);
+for (var i = 0; i < keys.length; i++) {
+    var datum = data[keys[i]];
+    %>
+    <li><%= keys[i] %> :- <%= datum %></li>
+    <%
+} %>
+</ul>
