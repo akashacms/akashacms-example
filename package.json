@@ -29,7 +29,7 @@
     "@akashacms/plugins-breadcrumbs": "akashacms/akashacms-breadcrumbs",
     "akashacms-dlassets": "akashacms/akashacms-dlassets",
     "@akashacms/plugins-document-viewers": "akashacms/akashacms-document-viewers",
-    "@akashacms/plugins-embeddables": "akashacms/akashacms-embeddables#example",
+    "@akashacms/plugins-embeddables": "akashacms/akashacms-embeddables#watcher",
     "akashacms-external-links": "akashacms/akashacms-external-links",
     "@akashacms/plugins-footnotes": "akashacms/akashacms-footnotes",
     "@akashacms/plugins-tagged-content": "akashacms/akashacms-tagged-content#watcher",
