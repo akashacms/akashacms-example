@@ -143,11 +143,6 @@ config.setMahabhutaConfig({
     decodeEntities: true
 });
 
-/* config.plugin("akashacms-tagged-content")
-    .sortBy('title')
-    .headerTemplate("---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p>Pages with tag @tagName@</p>")
-    .tagsDirectory('/tags/'); */
-
 config.addMahabhuta(
     [
       function($, metadata, dirty, done) {
@@ -157,11 +152,4 @@ config.addMahabhuta(
     ]);
 
 config.prepare();
-
-// console.log(`AssetDirs: ${util.inspect(config.assetDirs)}`);
-// console.log(`DocumentDirs: ${util.inspect(config.documentDirs)}`);
-// console.log(`PartialDirs: ${util.inspect(config.partialsDirs)}`);
-// console.log(`LayoutDirs: ${util.inspect(config.layoutDirs)}`);
-// console.log(`RenderDestination: ${util.inspect(config.renderDestination)}`);
-
 module.exports = config;
