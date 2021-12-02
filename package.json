@@ -12,14 +12,16 @@
     "url": "git://github.com/akashacms/akashacms-example.git"
   },
   "scripts": {
-    "build": "npm-run-all build-vue:example-1 build:copy build:render",
+    "build": "npm-run-all build:copy build:render",
     "build:copy": "akasharender copy-assets config.js",
     "build:render": "akasharender render config.js",
     "build-vue": "npm-run-all build-vue:example-1",
     "build-vue:example-1": "cd vue-js-examples/example-1 && npm install && npm run build",
     "deploy": "cd out && rsync --archive --delete --exclude '.well-known' --exclude '.well-known/*' --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
     "gh-pages": "akasharender gh-pages-publish config.js",
-    "preview": "cd out && ws --log.format dev",
+    "watch": "npm-run-all --parallel watcher preview",
+    "watcher": "akasharender watch config.js",
+    "preview": "live-server out",
     "test": "npm-run-all build test:mocha",
     "test:mocha": "cd test && mocha ./index"
   },
@@ -37,19 +39,19 @@
     "akashacms-dlassets": "akashacms/akashacms-dlassets",
     "akashacms-external-links": "akashacms/akashacms-external-links",
     "akasharender": "akashacms/akasharender#watcher",
-    "bootstrap": "^4.3.x",
-    "chai": "^4.1.2",
+    "bootstrap": "^4.6.x",
+    "chai": "^4.3.x",
     "epub-skeleton": "github:akashacms/epub-skeleton",
     "epub-website": "github:akashacms/epub-website#watcher",
-    "fs-extra": "^5.x",
+    "fs-extra": "^10.x",
     "globfs": ">=0.3",
-    "jquery": "^3.3.x",
-    "local-web-server": "^3.0.7",
+    "jquery": "^3.6.x",
+    "live-server": "^1.2.1",
     "mahabhuta": "github:akashacms/mahabhuta",
-    "markdown-it-plantuml": "^1.4.1",
-    "mocha": "^5.2.0",
-    "npm-run-all": "^4.1.5",
+    "markdown-it-plantuml": "^1.4.x",
+    "mocha": "^9.1.x",
+    "npm-run-all": "^4.1.x",
     "oembetter": "^0.1.19",
-    "popper.js": ">=1.14.x"
+    "popper.js": ">=1.16.x"
   }
 }
