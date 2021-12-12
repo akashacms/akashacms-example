@@ -1,3 +1,7 @@
 [submodule "modules/akashacms-external-links"]
 	path = modules/akashacms-external-links
 	url = https://github.com/akashacms/akashacms-external-links.git
+[submodule "modules/akashacms-tagged-content"]
+	path = modules/akashacms-tagged-content
+	url = https://github.com/akashacms/akashacms-tagged-content.git
+	branch = watcher

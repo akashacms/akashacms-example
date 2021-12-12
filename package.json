@@ -24,7 +24,10 @@
     "preview": "live-server out",
     "test": "npm-run-all build test:mocha",
     "test:mocha": "cd test && mocha ./index",
-    "update:modules": "git submodule update --recursive --remote --checkout"
+    "update:modules": "git submodule update --recursive --remote --checkout",
+    "checkout": "npm-run-all checkout:*",
+    "checkout:akashacms-external-links": "cd modules/akashacms-external-links && git checkout master",
+    "checkout:akashacms-tagged-content": "cd modules/akashacms-tagged-content && git checkout watcher"
   },
   "dependencies": {
     "@akashacms/plugins-authors": "github:akashacms/akashacms-plugin-authors",
@@ -34,7 +37,7 @@
     "@akashacms/plugins-document-viewers": "akashacms/akashacms-document-viewers",
     "@akashacms/plugins-embeddables": "akashacms/akashacms-embeddables#watcher",
     "@akashacms/plugins-footnotes": "akashacms/akashacms-footnotes",
-    "@akashacms/plugins-tagged-content": "akashacms/akashacms-tagged-content#watcher",
+    "@akashacms/plugins-tagged-content": "./modules/akashacms-tagged-content",
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#watcher",
     "akashacms-affiliates": "akashacms/akashacms-affiliates",
     "akashacms-dlassets": "akashacms/akashacms-dlassets",
