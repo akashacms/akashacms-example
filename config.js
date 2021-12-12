@@ -72,7 +72,7 @@ config
     .use(require('akashacms-dlassets'))
     .use(require('@akashacms/plugins-document-viewers'))
     .use(require('@akashacms/plugins-embeddables'))
-    .use(require('akashacms-external-links'))
+    .use(require('@akashacms/plugin-external-links'))
     .use(require('@akashacms/plugins-footnotes'))
     .use(require('akashacms-affiliates'))
     .use(require('@akashacms/plugins-tagged-content'), {
@@ -105,7 +105,7 @@ config.plugin("akashacms-affiliates")
     .noSkimlinksDomain(config, 'amazon.com')
     .noViglinksDomain(config, 'amazon.com');
 
-config.plugin("akashacms-external-links")
+config.plugin("@akashacms/plugin-external-links")
     // TARGET=_blank test
     .setTargetBlank(config, true)
 

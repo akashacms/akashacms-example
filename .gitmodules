@@ -1,0 +1,3 @@
+[submodule "modules/akashacms-external-links"]
+	path = modules/akashacms-external-links
+	url = https://github.com/akashacms/akashacms-external-links.git
