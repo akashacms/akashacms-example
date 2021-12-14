@@ -40,7 +40,7 @@
     "@akashacms/plugins-tagged-content": "./modules/akashacms-tagged-content",
     "@akashacms/theme-bootstrap": "./modules/akashacms-theme-bootstrap",
     "akashacms-affiliates": "./modules/akashacms-affiliates",
-    "akashacms-dlassets": "./modules/akashacms-dlassets",
+    "@akashacms/plugin-dlassets": "./modules/akashacms-dlassets",
     "@akashacms/plugin-external-links": "./modules/akashacms-external-links",
     "akasharender": "./modules/akasharender",
     "bootstrap": "^4.6.x",

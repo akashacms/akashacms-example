@@ -69,7 +69,7 @@ config
             }
         ]
     })
-    .use(require('akashacms-dlassets'))
+    .use(require('@akashacms/plugin-dlassets'))
     .use(require('@akashacms/plugins-document-viewers'))
     .use(require('@akashacms/plugins-embeddables'))
     .use(require('@akashacms/plugin-external-links'))
