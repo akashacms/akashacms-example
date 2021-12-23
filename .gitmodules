@@ -45,4 +45,4 @@
 [submodule "modules/akasharender"]
 	path = modules/akasharender
 	url = https://github.com/akashacms/akasharender.git
-	branch = watcher
+	branch = master

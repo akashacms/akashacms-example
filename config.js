@@ -14,6 +14,10 @@ config.configDir = __dirname;
 config.findRendererName('.html.md')
     .use(require('markdown-it-plantuml'), {
         imageFormat: 'svg'
+    })
+    .use(require('markdown-it-highlightjs'), { 
+        auto: true, 
+        code: true 
     });
 
 config

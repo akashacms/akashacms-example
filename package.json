@@ -30,6 +30,8 @@
     "checkout:akashacms-tagged-content": "cd modules/akashacms-tagged-content && git checkout watcher"
   },
   "dependencies": {
+    "@akashacms/plugin-dlassets": "./modules/akashacms-dlassets",
+    "@akashacms/plugin-external-links": "./modules/akashacms-external-links",
     "@akashacms/plugins-authors": "./modules/akashacms-plugin-authors",
     "@akashacms/plugins-base": "./modules/akashacms-base",
     "@akashacms/plugins-booknav": "./modules/akashacms-booknav",
@@ -39,9 +41,8 @@
     "@akashacms/plugins-footnotes": "./modules/akashacms-footnotes",
     "@akashacms/plugins-tagged-content": "./modules/akashacms-tagged-content",
     "@akashacms/theme-bootstrap": "./modules/akashacms-theme-bootstrap",
+    "@compodoc/live-server": "^1.2.x",
     "akashacms-affiliates": "./modules/akashacms-affiliates",
-    "@akashacms/plugin-dlassets": "./modules/akashacms-dlassets",
-    "@akashacms/plugin-external-links": "./modules/akashacms-external-links",
     "akasharender": "./modules/akasharender",
     "bootstrap": "^4.6.x",
     "chai": "^4.3.x",
@@ -49,7 +50,7 @@
     "epub-website": "./modules/epub-website",
     "fs-extra": "^10.x",
     "jquery": "^3.6.x",
-    "@compodoc/live-server": "^1.2.x",
+    "markdown-it-highlightjs": "^3.5.0",
     "markdown-it-plantuml": "^1.4.x",
     "mocha": "^9.1.x",
     "npm-run-all": "^4.1.x",
