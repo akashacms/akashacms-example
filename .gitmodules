@@ -4,11 +4,11 @@
 [submodule "modules/akashacms-tagged-content"]
 	path = modules/akashacms-tagged-content
 	url = https://github.com/akashacms/akashacms-tagged-content.git
-	branch = watcher
+	branch = master
 [submodule "modules/akashacms-theme-bootstrap"]
 	path = modules/akashacms-theme-bootstrap
 	url = https://github.com/akashacms/akashacms-theme-bootstrap.git
-	branch = watcher
+	branch = master
 [submodule "modules/akashacms-plugin-authors"]
 	path = modules/akashacms-plugin-authors
 	url = https://github.com/akashacms/akashacms-plugin-authors.git
@@ -18,7 +18,7 @@
 [submodule "modules/akashacms-embeddables"]
 	path = modules/akashacms-embeddables
 	url = https://github.com/akashacms/akashacms-embeddables.git
-	branch = watcher
+	branch = master
 [submodule "modules/akashacms-breadcrumbs"]
 	path = modules/akashacms-breadcrumbs
 	url = https://github.com/akashacms/akashacms-breadcrumbs.git
@@ -28,7 +28,7 @@
 [submodule "modules/akashacms-base"]
 	path = modules/akashacms-base
 	url = https://github.com/akashacms/akashacms-base.git
-	branch = watcher
+	branch = master
 [submodule "modules/akashacms-affiliates"]
 	path = modules/akashacms-affiliates
 	url = https://github.com/akashacms/akashacms-affiliates.git
@@ -41,7 +41,7 @@
 [submodule "modules/epub-website"]
 	path = modules/epub-website
 	url = https://github.com/akashacms/epub-website.git
-	branch = watcher
+	branch = master
 [submodule "modules/akasharender"]
 	path = modules/akasharender
 	url = https://github.com/akashacms/akasharender.git
