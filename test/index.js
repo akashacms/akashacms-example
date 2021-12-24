@@ -14,6 +14,7 @@ describe('build site', function() {
             akasha.setupAssets(config),
             akasha.setupLayouts(config),
             akasha.setupPartials(config)
+            akasha.setupPluginCaches(config)
         ])
         let filecache = await akasha.filecache;
         await Promise.all([
