@@ -13,7 +13,7 @@ describe('build site', function() {
             akasha.setupDocuments(config),
             akasha.setupAssets(config),
             akasha.setupLayouts(config),
-            akasha.setupPartials(config)
+            akasha.setupPartials(config),
             akasha.setupPluginCaches(config)
         ])
         let filecache = await akasha.filecache;
