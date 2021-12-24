@@ -34,10 +34,10 @@ config
         src: 'node_modules/popper.js/dist',
         dest: 'vendor/popper.js'
     })
-    .addAssetsDir({
+    /* .addAssetsDir({
         src: 'vue-js-examples/example-1/dist',
         dest: 'vue-js/example-01'
-    })
+    }) */
     .addLayoutsDir('layouts')
     .addDocumentsDir('documents')
     .addDocumentsDir({
