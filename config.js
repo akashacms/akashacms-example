@@ -78,7 +78,7 @@ config
     .use(require('@akashacms/plugins-embeddables'))
     .use(require('@akashacms/plugin-external-links'))
     .use(require('@akashacms/plugins-footnotes'))
-    .use(require('akashacms-affiliates'))
+    .use(require('@akashacms/plugins-affiliates'))
     .use(require('@akashacms/plugins-tagged-content'), {
         sortBy: 'title',
         // @tagDescription@ can only appear once
@@ -102,7 +102,7 @@ config
     })
     .use(require('epub-website'));
 
-config.plugin("akashacms-affiliates")
+config.plugin("@akashacms/plugins-affiliates")
     .amazonAffiliateCode(config, 'com', 'thereikipage')
     .loadAffiliateProducts(config, 
         path.join(__dirname, 'affiliate-products.yml'))

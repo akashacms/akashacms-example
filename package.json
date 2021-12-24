@@ -42,7 +42,7 @@
     "@akashacms/plugins-tagged-content": "./modules/akashacms-tagged-content",
     "@akashacms/theme-bootstrap": "./modules/akashacms-theme-bootstrap",
     "@compodoc/live-server": "^1.2.x",
-    "akashacms-affiliates": "./modules/akashacms-affiliates",
+    "@akashacms/plugins-affiliates": "./modules/akashacms-affiliates",
     "akasharender": "./modules/akasharender",
     "bootstrap": "^4.6.x",
     "chai": "^4.3.x",
