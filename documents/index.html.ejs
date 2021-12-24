@@ -14,13 +14,13 @@ title: Akasha CMS example
 <ul>
 <%
 // NOTE: This section also serves as a contrived example of processing data in a template
-var tags = {
+var taglist = {
     ".html.ejs": "Uses the EJS template engine - https://github.com/visionmedia/ejs",
     ".html.md": "Uses markdown",
     ".html.ejs.md": "Runs markdown followed by EJS",
     ".css.less": "Uses the LESS renderer to produce a CSS file - http://lesscss.org"
 };
-for(var tag in tags) {
+for(var tag in taglist) {
     %><li><b><%= tag %></b>: <%= tags[tag] %></li><%
 }
 %></ul>

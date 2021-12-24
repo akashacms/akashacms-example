@@ -14,6 +14,10 @@ config.configDir = __dirname;
 config.findRendererName('.html.md')
     .use(require('markdown-it-plantuml'), {
         imageFormat: 'svg'
+    })
+    .use(require('markdown-it-highlightjs'), { 
+        auto: true, 
+        code: true 
     });
 
 config
@@ -69,10 +73,10 @@ config
             }
         ]
     })
-    .use(require('akashacms-dlassets'))
+    .use(require('@akashacms/plugin-dlassets'))
     .use(require('@akashacms/plugins-document-viewers'))
     .use(require('@akashacms/plugins-embeddables'))
-    .use(require('akashacms-external-links'))
+    .use(require('@akashacms/plugin-external-links'))
     .use(require('@akashacms/plugins-footnotes'))
     .use(require('akashacms-affiliates'))
     .use(require('@akashacms/plugins-tagged-content'), {
@@ -105,7 +109,7 @@ config.plugin("akashacms-affiliates")
     .noSkimlinksDomain(config, 'amazon.com')
     .noViglinksDomain(config, 'amazon.com');
 
-config.plugin("akashacms-external-links")
+config.plugin("@akashacms/plugin-external-links")
     // TARGET=_blank test
     .setTargetBlank(config, true)
 
@@ -143,11 +147,6 @@ config.setMahabhutaConfig({
     decodeEntities: true
 });
 
-/* config.plugin("akashacms-tagged-content")
-    .sortBy('title')
-    .headerTemplate("---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p>Pages with tag @tagName@</p>")
-    .tagsDirectory('/tags/'); */
-
 config.addMahabhuta(
     [
       function($, metadata, dirty, done) {
@@ -157,11 +156,4 @@ config.addMahabhuta(
     ]);
 
 config.prepare();
-
-// console.log(`AssetDirs: ${util.inspect(config.assetDirs)}`);
-// console.log(`DocumentDirs: ${util.inspect(config.documentDirs)}`);
-// console.log(`PartialDirs: ${util.inspect(config.partialsDirs)}`);
-// console.log(`LayoutDirs: ${util.inspect(config.layoutDirs)}`);
-// console.log(`RenderDestination: ${util.inspect(config.renderDestination)}`);
-
 module.exports = config;
