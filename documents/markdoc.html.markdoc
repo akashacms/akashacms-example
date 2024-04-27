@@ -1,6 +1,6 @@
 ---
 title: Markdoc test using the standard Markdown test
-layout: default-once.html.ejs
+layout: default.html.ejs
 ---
 
 AkashaCMS also supports markdoc.
