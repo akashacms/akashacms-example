@@ -19,3 +19,12 @@ This next set of examples are a video stored on Vimeo.  That service offers a si
 
 
 <embed-resource template="embed-resource-framed.html.ejs" href="https://vimeo.com/110572345"/>
+
+Odysee
+
+<embed-resource template="embed-resource-framed.html.ejs" href="https://odysee.com/@RobBraxmanTech:6/financial:e"/>
+
+Urbanists-dot-video
+
+<embed-resource template="embed-resource-framed.html.ejs" href="https://urbanists.video/w/6Wj3SGDJSYGr5JQ8eZzcSg"/>
+

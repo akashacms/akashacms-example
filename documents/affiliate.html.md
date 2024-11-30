@@ -6,7 +6,7 @@ products:
 
     - code: "1785881507"
       anchorName: "NodeJSWebDevelopment3rdEdition"
-      href: "/nodejs/learning/products.html"
+      href: "affiliate.html"
       productname: "Node.JS Web Development - Third Edition"
       productbuyurl: "https://www.amazon.com/Node-JS-Web-Development-David-Herron/dp/1785881507/ref=as_li_ss_tl?ie=UTF8&qid=1468558069&sr=8-2&keywords=node+web+development&linkCode=ll1&tag=techsparx-20&linkId=6259e7c5a409f144dff21568d98a547d"
       productimgurl: "https://images-na.ssl-images-amazon.com/images/I/41SzsmJa9uL.jpg"
