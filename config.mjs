@@ -21,6 +21,8 @@ import { ExternalLinksPlugin } from '@akashacms/plugins-external-links';
 import { FootnotesPlugin } from '@akashacms/plugins-footnotes';
 import { AffiliatesPlugin } from '@akashacms/plugins-affiliates';
 
+import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
+
 // import { default as EPUBWebsitePlugin } from 'epub-website';
 
 const config = new akasha.Configuration();
@@ -38,6 +40,21 @@ config.findRendererName('.html.md')
         auto: true, 
         code: true 
     });
+
+config.addTagDescriptions([
+            {
+                tagName: "Embed",
+                description: "Testing embeddeble thingies"
+            },
+            {
+                tagName: "Eenie",
+                description: "EENIE"
+            },
+            {
+                tagName: "Meenie",
+                description: "MEENIE"
+            }
+        ]);
 
 config
     .addAssetsDir('assets')
@@ -68,10 +85,14 @@ config
     })
     .addPartialsDir('partials');
 
+
 config
     .use(ThemeBootstrapPlugin)
     .use(BasePlugin, {
-        generateSitemapFlag: true
+        generateSitemapFlag: true,
+        pathIndexes: '/tags/',
+        headerTemplate: "---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p><a href='./index.html'>Tag Index</a></p><p>Pages with tag @tagName@</p><p>@tagDescription@</p>",
+        indexTemplate: "---\ntitle: Tags for AkashaCMS Example site\nlayout: tagpage.html.ejs\n---\n",
     })
     .use(BreadcrumbsPlugin)
     .use(BooknavPlugin)
@@ -81,13 +102,13 @@ config
             {
                 code: "boygeorge",
                 fullname: "Boy George",
-                url: "URL",
+                url: "Boy-George-URL",
                 bio: "<p>Weird ass british rocker</p>"
             },
             {
                 code: "eltonjohn",
                 fullname: "Elton John",
-                url: "URL",
+                url: "Elton-John-URL",
                 bio: "<p>Mainstream british rocker</p>"
             }
         ]
@@ -104,20 +125,16 @@ config
         headerTemplate: "---\ntitle: @title@\nlayout: tagpage.html.ejs\n---\n<p><a href='./index.html'>Tag Index</a></p><p>Pages with tag @tagName@</p><p>@tagDescription@</p>",
         indexTemplate: "---\ntitle: Tags for AkashaCMS Example site\nlayout: tagpage.html.ejs\n---\n",
         pathIndexes: '/tags/',
-        tags: [
-            {
-                name: "Embed",
-                description: "Testing embeddeble thingies"
-            },
-            {
-                name: "Eenie",
-                description: "EENIE"
-            },
-            {
-                name: "Meenie",
-                description: "MEENIE"
-            }
-        ]
+    })
+    .use(AdblockCheckerPlugin, {
+        selector: '.advert',
+        codeOnBlocked: `
+        <div style="border: 1px solid red; max-width: 100%;">Browse available:
+            <ul class="list-group">
+            <li class="list-group-item list-group-item-info"><a type="button" class="btn btn-outline-primary btn-lg" href="/ev-charging/range-confidence/chap8-tech/electric-car-extension-cords.html">Electric vehicle charging cords.</a></li>
+            <li class="list-group-item list-group-item-info"><a type="button" class="btn btn-outline-primary btn-lg" href="/ev-charging/range-confidence/chap-6a-evse-catalog.html">Electric vehicle charging stations</a></li>
+            </ul>
+        </div>`
     })
     // .use(EPUBWebsitePlugin)
     ;
@@ -176,4 +193,5 @@ config.addMahabhuta(
     ]);
 
 config.prepare();
+config.plugin('akashacms-builtin').pathIndexes = '/tags/';
 export default config;
