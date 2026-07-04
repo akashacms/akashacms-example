@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant D as Document
+    participant P as diagrams-maker
+    participant R as mermaid-wasm-renderer
+    D->>P: <diagrams-mermaid> tag
+    P->>R: renderSvg(diagram text)
+    R-->>P: SVG string
+    P->>D: <figure> with <img>

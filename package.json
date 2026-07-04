@@ -44,7 +44,7 @@
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#4.6.0",
     "@compodoc/live-server": "^1.2.x",
     "@akashacms/plugins-affiliates": "akashacms/akashacms-affiliates#0.10",
-    "@akashacms/plugins-diagrams": "akashacms/plugins-diagrams#mermaid-wasm-renderer",
+    "@akashacms/diagrams-maker": "akashacms/plugins-diagrams#mermaid-wasm-renderer",
     "akasharender": "akashacms/akasharender#0.10",
     "bootstrap": "^4.6.x",
     "chai": "^4.3.x",

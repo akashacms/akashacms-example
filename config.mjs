@@ -23,6 +23,12 @@ import { AffiliatesPlugin } from '@akashacms/plugins-affiliates';
 
 import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
 
+import {
+    DiagramsPlugin,
+    MarkdownITMermaidPlugin
+} from '@akashacms/diagrams-maker';
+
+
 // import { default as EPUBWebsitePlugin } from 'epub-website';
 
 const config = new akasha.Configuration();
@@ -39,6 +45,12 @@ config.findRendererName('.html.md')
     .use(MarkdownITHighlightJS, { 
         auto: true, 
         code: true 
+    })
+    .use(MarkdownITMermaidPlugin, {
+        // All options are optional
+        // themePreset: 'forest',
+        // configJSON: await fsp.readFile('mermaid-config.json', 'utf-8'),
+        // fontFNs: [ '/path/to/Roboto.ttf' ]
     });
 
 config.addTagDescriptions([
@@ -113,6 +125,7 @@ config
             }
         ]
     })
+    .use(DiagramsPlugin)
     .use(DownloadAssetsPlugin)
     .use(DocumentViewersPlugin)
     .use(EmbeddablesPlugin)
