@@ -34,17 +34,18 @@
     "@akashacms/plugins-dlassets": "akashacms/akashacms-dlassets",
     "@akashacms/plugins-external-links": "akashacms/akashacms-external-links",
     "@akashacms/plugins-authors": "akashacms/akashacms-plugin-authors",
-    "@akashacms/plugins-base": "akashacms/akashacms-base",
+    "@akashacms/plugins-base": "akashacms/akashacms-base#0.10",
     "@akashacms/plugins-booknav": "akashacms/akashacms-booknav",
     "@akashacms/plugins-breadcrumbs": "akashacms/akashacms-breadcrumbs",
     "@akashacms/plugins-document-viewers": "akashacms/akashacms-document-viewers",
     "@akashacms/plugins-embeddables": "akashacms/akashacms-embeddables",
     "@akashacms/plugins-footnotes": "akashacms/akashacms-footnotes",
-    "@akashacms/plugins-tagged-content": "akashacms/akashacms-tagged-content",
+    "@akashacms/plugins-tagged-content": "akashacms/akashacms-tagged-content#0.10",
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#4.6.0",
     "@compodoc/live-server": "^1.2.x",
-    "@akashacms/plugins-affiliates": "akashacms/akashacms-affiliates",
-    "akasharender": "akashacms/akasharender#0.9",
+    "@akashacms/plugins-affiliates": "akashacms/akashacms-affiliates#0.10",
+    "@akashacms/plugins-diagrams": "akashacms/plugins-diagrams#mermaid-wasm-renderer",
+    "akasharender": "akashacms/akasharender#0.10",
     "bootstrap": "^4.6.x",
     "chai": "^4.3.x",
     "epub-skeleton": "akashacms/epub-skeleton",
@@ -54,12 +55,17 @@
     "markdown-it-plantuml": "^1.4.x",
     "mocha": "^9.1.x",
     "npm-run-all": "^4.1.x",
-    "oembetter": "^0.1.19",
     "popper.js": ">=1.16.x"
   },
   "overrides": {
     "rimraf@<4": "5.0.10",
-    "glob@<9": "10.4.5"
+    "glob@<9": "11.x",
+    "uuid@<=10.x": "11.x"
+  },
+  "allowScripts": {
+    "canvas@3.2.3": true,
+    "sharp@0.34.5": true,
+    "sharp@0.29.3": true,
+    "forerunnerdb@2.0.24": true
   }
-
 }
