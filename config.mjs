@@ -26,7 +26,7 @@ import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
 import {
     DiagramsPlugin,
     MarkdownITMermaidPlugin
-} from '@akashacms/diagrams-maker';
+} from '@akashacms/diagram-makers';
 
 
 // import { default as EPUBWebsitePlugin } from 'epub-website';

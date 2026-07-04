@@ -14,7 +14,7 @@
   "scripts": {
     "build": "npm-run-all build:copy build:render",
     "build:copy": "akasharender copy-assets config.mjs",
-    "build:render": "akasharender render --quiet config.mjs",
+    "build:render": "akasharender render config.mjs",
     "build-vue": "npm-run-all build-vue:example-1",
     "build-vue:example-1": "cd vue-js-examples/example-1 && npm install && npm run build",
     "deploy": "cd out && rsync --archive --delete --exclude '.well-known' --exclude '.well-known/*' --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
@@ -44,7 +44,7 @@
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#4.6.0",
     "@compodoc/live-server": "^1.2.x",
     "@akashacms/plugins-affiliates": "akashacms/akashacms-affiliates#0.10",
-    "@akashacms/diagrams-maker": "akashacms/plugins-diagrams#mermaid-wasm-renderer",
+    "@akashacms/diagram-makers": "akashacms/plugins-diagrams#mermaid-wasm-renderer",
     "akasharender": "akashacms/akasharender#0.10",
     "bootstrap": "^4.6.x",
     "chai": "^4.3.x",
