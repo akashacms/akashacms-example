@@ -25,7 +25,8 @@ import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
 
 import {
     DiagramsPlugin,
-    MarkdownITMermaidPlugin
+    MarkdownITMermaidPlugin,
+    MarkdownITPlantUMLPlugin
 } from '@akashacms/diagram-makers';
 
 
@@ -51,7 +52,8 @@ config.findRendererName('.html.md')
         // themePreset: 'forest',
         // configJSON: await fsp.readFile('mermaid-config.json', 'utf-8'),
         // fontFNs: [ '/path/to/Roboto.ttf' ]
-    });
+    })
+    .use(MarkdownITPlantUMLPlugin);
 
 config.addTagDescriptions([
             {
