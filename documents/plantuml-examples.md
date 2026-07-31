@@ -60,3 +60,17 @@ PlantUML input file, extremely wide, output to SVG file
 PlantUML input file, extremely wide, output to inline SVG
 
 <diagrams-plantuml input-file="./puml-wide-sequence-diagram.puml" tsvg/>
+
+----------------------
+
+PlantUML input file, PNG output file, with a class= parameter.  Bug report says the `<figure>` tag will be messed up.
+
+<diagrams-plantuml input-file="./puml-wide-sequence-diagram.puml"
+    output-file="puml-wide-sequence-diagram.png" tpng class="img-fluid"/>
+
+----------------------
+
+PlantUML input file, SVG output file, with a class= parameter.  Bug report says the `<figure>` tag will be messed up.
+
+<diagrams-plantuml input-file="./puml-wide-sequence-diagram.puml"
+    output-file="puml-wide-sequence-diagram.svg" tsvg class="img-fluid"/>

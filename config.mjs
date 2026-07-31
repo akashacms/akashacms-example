@@ -23,6 +23,8 @@ import { AffiliatesPlugin } from '@akashacms/plugins-affiliates';
 
 import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
 
+import { TablerIconsPlugin } from '@akashacms/tabler-icons';
+
 import {
     DiagramsPlugin,
     MarkdownITMermaidPlugin,
@@ -134,6 +136,7 @@ config
     .use(ExternalLinksPlugin)
     .use(FootnotesPlugin)
     .use(AffiliatesPlugin)
+    .use(TablerIconsPlugin)
     .use(TaggedContentPlugin, {
         sortBy: 'title',
         // @tagDescription@ can only appear once
