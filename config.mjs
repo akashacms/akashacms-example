@@ -23,6 +23,7 @@ import { AffiliatesPlugin } from '@akashacms/plugins-affiliates';
 
 import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
 
+import { BootstrapIconsPlugin } from '@akashacms/bootstrap-icons';
 import { TablerIconsPlugin } from '@akashacms/tabler-icons';
 
 import {
@@ -112,6 +113,7 @@ config
     })
     .use(BreadcrumbsPlugin)
     .use(BooknavPlugin)
+    .use(BootstrapIconsPlugin)
     .use(AuthorsPlugin, {
         default: "boygeorge",
         authors: [

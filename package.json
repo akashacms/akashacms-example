@@ -30,6 +30,7 @@
     "checkout:akashacms-tagged-content": "cd modules/akashacms-tagged-content && git checkout watcher"
   },
   "dependencies": {
+    "akasharender": "akashacms/akasharender#0.10",
     "@akashacms/diagram-makers": "akashacms/plugins-diagrams#0.10",
     "@akashacms/plugins-adblock-checker": "akashacms/akashacms-adblock-checker",
     "@akashacms/plugins-affiliates": "akashacms/akashacms-affiliates#0.10",
@@ -44,9 +45,9 @@
     "@akashacms/plugins-footnotes": "akashacms/akashacms-footnotes",
     "@akashacms/plugins-tagged-content": "akashacms/akashacms-tagged-content#0.10",
     "@akashacms/tabler-icons": "akashacms/tabler-icons#0.10",
+    "@akashacms/bootstrap-icons": "akashacms/bootstrap-icons",
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#4.6.0",
     "@compodoc/live-server": "^1.2.x",
-    "akasharender": "akashacms/akasharender#0.10",
     "bootstrap": "^4.6.x",
     "chai": "^4.3.x",
     "epub-skeleton": "akashacms/epub-skeleton",
