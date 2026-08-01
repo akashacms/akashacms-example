@@ -45,6 +45,7 @@
     "@akashacms/plugins-footnotes": "akashacms/akashacms-footnotes",
     "@akashacms/plugins-tagged-content": "akashacms/akashacms-tagged-content#0.10",
     "@akashacms/tabler-icons": "akashacms/tabler-icons#0.10",
+    "@akashacms/country-flag-icons": "akashacms/country-flag-icons",
     "@akashacms/bootstrap-icons": "akashacms/bootstrap-icons",
     "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#4.6.0",
     "@compodoc/live-server": "^1.2.x",

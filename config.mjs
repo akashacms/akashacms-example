@@ -25,6 +25,7 @@ import { AdblockCheckerPlugin } from '@akashacms/plugins-adblock-checker';
 
 import { BootstrapIconsPlugin } from '@akashacms/bootstrap-icons';
 import { TablerIconsPlugin } from '@akashacms/tabler-icons';
+import { CountryFlagIconsPlugin } from '@akashacms/country-flag-icons';
 
 import {
     DiagramsPlugin,
@@ -114,6 +115,7 @@ config
     .use(BreadcrumbsPlugin)
     .use(BooknavPlugin)
     .use(BootstrapIconsPlugin)
+    .use(CountryFlagIconsPlugin)
     .use(AuthorsPlugin, {
         default: "boygeorge",
         authors: [
