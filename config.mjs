@@ -76,18 +76,20 @@ config.addTagDescriptions([
 
 config
     .addAssetsDir('assets')
-    .addAssetsDir({
-        src: 'node_modules/bootstrap/dist',
-        dest: 'vendor/bootstrap'
-    })
-   .addAssetsDir({
-        src: 'node_modules/jquery/dist',
-        dest: 'vendor/jquery'
-    })
-    .addAssetsDir({
-        src: 'node_modules/popper.js/dist',
-        dest: 'vendor/popper.js'
-    })
+// These are no longer required because theme-bootstrap#5.x
+// mounts these directories
+//     .addAssetsDir({
+//         src: 'node_modules/bootstrap/dist',
+//         dest: 'vendor/bootstrap'
+//     })
+//    .addAssetsDir({
+//         src: 'node_modules/jquery/dist',
+//         dest: 'vendor/jquery'
+//     })
+//     .addAssetsDir({
+//         src: 'node_modules/popper.js/dist',
+//         dest: 'vendor/popper.js'
+//     })
     /* .addAssetsDir({
         src: 'vue-js-examples/example-1/dist',
         dest: 'vue-js/example-01'
