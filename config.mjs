@@ -122,13 +122,13 @@ config
             {
                 code: "boygeorge",
                 fullname: "Boy George",
-                url: "Boy-George-URL",
+                url: "/authors/Boy-George.html",
                 bio: "<p>Weird ass british rocker</p>"
             },
             {
                 code: "eltonjohn",
                 fullname: "Elton John",
-                url: "Elton-John-URL",
+                url: "/authors/Elton-John.html",
                 bio: "<p>Mainstream british rocker</p>"
             }
         ]
