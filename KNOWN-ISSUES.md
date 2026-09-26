@@ -24,3 +24,6 @@ Running `npm audit` shows two issues, and there are no fixes for either
 
 1. akasharender uses csv-parse which has a known issue, no known fix
 2. @akashacms/plugins-embeddables refers to meta-extractor which refers to file-type which has a problem, no known fix
+
+
+The directory `view-js-examples` no longer compiles.  The code in `documents/vue-js-example.html.md` which refers to that code has been commented-out.
