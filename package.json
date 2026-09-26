@@ -14,7 +14,7 @@
   "scripts": {
     "build": "npm-run-all build:copy build:render",
     "build:copy": "akasharender copy-assets config.mjs",
-    "build:render": "akasharender render config.mjs",
+    "build:render": "akasharender render --force-render-all config.mjs",
     "build-vue": "npm-run-all build-vue:example-1",
     "build-vue:example-1": "cd vue-js-examples/example-1 && npm install && npm run build",
     "deploy": "cd out && rsync --archive --delete --exclude '.well-known' --exclude '.well-known/*' --verbose ./ user-name@example.akashacms.com:example.akashacms.com/ ",
