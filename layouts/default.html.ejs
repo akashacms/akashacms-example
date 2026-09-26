@@ -18,7 +18,7 @@
 <% } %>
 <%- partialSync("ak_headermeta.html.njk", locals) %>
 <!-- <ak-header-metatags></ak-header-metatags> -->
-<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+<ak-header-sitemap></ak-header-sitemap>
 <%- config.plugin("@akashacms/plugins-base").doLinkRelTags() %>
 <%- config.plugin("@akashacms/plugins-base").doCanonicalURL(rendered_url) %>
 <!--

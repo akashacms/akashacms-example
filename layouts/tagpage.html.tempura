@@ -16,6 +16,7 @@
 <partial file-name="favicon.html"/>
 <title>{{ title }}</title>
 <ak-header-metatags></ak-header-metatags>
+<ak-header-sitemap></ak-header-sitemap>
 <ak-stylesheets></ak-stylesheets>
 <ak-headerJavaScript></ak-headerJavaScript>
 <open-graph-promote-images root="article"></open-graph-promote-images>
