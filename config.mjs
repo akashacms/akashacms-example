@@ -95,6 +95,10 @@ config
     .addLayoutsDir('layouts')
     .addDocumentsDir('documents')
     .addDocumentsDir({
+        src: 'node_modules/epub-skeleton/assets',
+        dest: 'epub-skeleton'
+    })
+    .addDocumentsDir({
         src: 'node_modules/epub-skeleton/documents',
         dest: 'epub-skeleton',
         baseMetadata: {
