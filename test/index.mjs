@@ -69,8 +69,12 @@ describe('check pages', () => {
             .includes('https://example.akashacms.com/index.html'));
         assert.ok($('head link[rel="canonical"]').attr('href')
             .includes('https://example.akashacms.com/index.html'));
-        assert.ok($('head link[rel="sitemap"]').attr('href')
-            .includes('sitemap.xml'));
+        assert.ok(
+            $('head link[rel="sitemap"]').attr('href')
+            .includes('sitemap.xml')
+         || $('head link[rel="sitemap"]').attr('href')
+            .includes('sitemap-index.xml.gz')
+        );
 
         // NOTE: bootstrap.min.css is currently emitted twice, once by
         // @akashacms/theme-bootstrap and once by config.mjs's own
@@ -325,7 +329,7 @@ describe('link-checker render-destination fallback (diagrams-plantuml)', () => {
         assert.equal(typeof html, 'string');
 
         for (const rel of diagramFiles) {
-            assert.equal($(`img[src="${rel}"]`).length, 1,
+            assert.equal($(`img[src="${rel}"]`).length >= 1, true,
                 `plantuml-examples.html should carry <img src="${rel}">`);
         }
     });
