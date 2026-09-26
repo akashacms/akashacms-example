@@ -86,8 +86,31 @@ var app5 = new Vue({
 });
 </script>
 
+<!--
+
+CURRENTLY DISABLED - the build doesn't work.
+
+> example-1@1.0.0 build
+> cross-env NODE_ENV=production webpack --progress
+
+[webpack-cli] Failed to load '/home/david/Projects/akasharender/akashacms-example/vue-js-examples/example-1/webpack.config.js' config
+[webpack-cli] TypeError: webpack.optimize.UglifyJsPlugin is not a constructor
+    at Object.<anonymous> (/home/david/Projects/akasharender/akashacms-example/vue-js-examples/example-1/webpack.config.js:68:5)
+    at Module._compile (node:internal/modules/cjs/loader:1929:14)
+    at Object..js (node:internal/modules/cjs/loader:2060:10)
+    at Module.load (node:internal/modules/cjs/loader:1651:32)
+    at Module._load (node:internal/modules/cjs/loader:1443:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:261:19)
+    at Module.require (node:internal/modules/cjs/loader:1674:12)
+    at require (node:internal/modules/helpers:157:16)
+    at WebpackCLI.tryRequireThenImport (/home/david/Projects/akasharender/akashacms-example/vue-js-examples/example-1/node_modules/webpack-cli/lib/webpack-cli.js:204:22)
+    at loadConfigByPath (/home/david/Projects/akasharender/akashacms-example/vue-js-examples/example-1/node_modules/webpack-cli/lib/webpack-cli.js:1404:38)
+ERROR: "build-vue:example-1" exited with 2.
+
+
 Last Vue.js example - built using `vue init webpack-simple example-1`
 
 <div id="app-example-01" class="vue-js-example"></div>
 <script src="/vue-js/example-01/build.js"></script>
 
+-->
