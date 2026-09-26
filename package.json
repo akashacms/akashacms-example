@@ -41,17 +41,14 @@
     "@akashacms/tabler-icons": "akashacms/tabler-icons#0.10",
     "@akashacms/country-flag-icons": "akashacms/country-flag-icons",
     "@akashacms/bootstrap-icons": "akashacms/bootstrap-icons",
-    "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#4.6.0",
+    "@akashacms/theme-bootstrap": "akashacms/akashacms-theme-bootstrap#5.x",
     "@compodoc/live-server": "^1.2.x",
-    "bootstrap": "^4.6.x",
     "epub-skeleton": "akashacms/epub-skeleton#0.10",
     "epub-website": "akashacms/epub-website",
     "epubtools": "akashacms/epubtools#0.10",
-    "jquery": "^3.6.x",
     "markdown-it-highlightjs": "^3.5.0",
     "markdown-it-plantuml": "^1.4.x",
-    "npm-run-all": "^4.1.x",
-    "popper.js": ">=1.16.x"
+    "npm-run-all": "^4.1.x"
   },
   "overrides": {
     "rimraf@<4": "5.0.10",
@@ -59,7 +56,8 @@
     "tar@<=7.5.20": "7.5.22",
     "uuid@<=10.x": "11.x",
     "cheerio": { "encoding-sniffer": "^1.x" },
-    "rimraf": { "glob": "latest" }
+    "rimraf": { "glob": "latest" },
+    "@pintora/cli": { "jsdom": "latest" }
   },
   "allowScripts": {
     "canvas@3.2.3": true,
